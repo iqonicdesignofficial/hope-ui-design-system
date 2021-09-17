@@ -4,9 +4,13 @@
   </a>
 </p>
 
-Free Open Source Bootstrap 5 Design System.
+<h2 align="center">Free Open Source Bootstrap 5 Design System.</h2>
+
 ------------
-[![Hope UI Dashboard](https://assets.iqonic.design/hope-ui/github/rtl-mode-min.png "Hope UI Dashboard")](https://templates.iqonic.design/hope-ui/html/dist/ "Hope UI Dashboard")
+
+<a href="https://templates.iqonic.design/hope-ui/html/dist" title="Hope UI Dashboard">
+  <img src="https://assets.iqonic.design/hope-ui/github/rtl-mode-min.png" alt="Hope UI Dashboard" />
+</a>
 
 #### [Live Demo](https://templates.iqonic.design/hope-ui/html/dist/ "Live Demo")
 
@@ -34,6 +38,8 @@ Built ideally for developers, designers, and startups, or Creators, Hope UI brin
 
 - Support with bootstrap 5
 - Scss component based design
+- Fully Responsive
+- HBS(Handlebar) based html
 
 ## Table of Contents
 
@@ -141,11 +147,8 @@ github/hope-ui-design-system
 ![Safari](https://assets.iqonic.design/hope-ui/github/Safari.png)
 ![Microsoft](https://assets.iqonic.design/hope-ui/github/Microsoft%20edge.png)
 ![Operamini](https://assets.iqonic.design/hope-ui/github/Operamini.png)
-
-## Support Developer
-For any additional information please go to our [support forum](https://iqonic.desky.support/) and raise your questions or feedback provide there. We highly appreciate your participation!
 ## Reporting Issues
-Have a bug or a feature request? Raise the ticket at our [github](https://github.com/iqonicdesignofficial/hope-ui-design-system/issues) support
+Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-design-system/issues) support
 
 ## Licensing
 - Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://iqonic.design/) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
