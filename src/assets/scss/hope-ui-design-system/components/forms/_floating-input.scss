@@ -1,0 +1,48 @@
+// https://material.io/components/text-fields
+.custom-form-floating {
+    > .form-control {
+      &::placeholder {
+        color: transparent;
+      }
+      &:focus,
+      &:not(:placeholder-shown) {
+        padding-top: $form-floating-input-padding-b;
+        padding-bottom: $form-floating-input-padding-b;
+      }
+      // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+      &:-webkit-autofill {
+        padding-top: $form-floating-input-padding-b;
+        padding-bottom: $form-floating-input-padding-b;
+      }
+    }
+    > .form-control:focus,
+    > .form-control:not(:placeholder-shown),
+    > .form-select {
+      ~ label {
+        background-color: $white;
+        opacity:1;
+      }
+    }
+    @include floating-input-varient($custom-floating-input, $custom-floating-input-active, $custom-floating-input-padding-y, $custom-floating-input-padding-x, $custom-floating-input-height);
+}
+
+.custom-form-floating-sm{
+  @include floating-input-varient($custom-floating-input-sm, $custom-floating-input-active-sm, $custom-floating-input-padding-y-sm, $custom-floating-input-padding-x-sm, $custom-floating-input-height-sm);
+}
+
+.custom-form-floating-lg{
+  @include floating-input-varient($custom-floating-input-lg, $custom-floating-input-active-lg, $custom-floating-input-padding-y-lg, $custom-floating-input-padding-x-lg, $custom-floating-input-height-lg);
+}
+
+.custom-form-floating-flat {
+  .form-control{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+    &.is-valid, &.is-invalid{
+      box-shadow: none;
+    }
+  }
+}

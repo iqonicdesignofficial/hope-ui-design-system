@@ -1,0 +1,26 @@
+
+// Card deck
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    margin-bottom: $spacer;
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex-flow: row wrap;
+    margin-right: -$spacer;
+    margin-left: -$spacer;
+
+    .card {
+      display: flex;
+      flex: 1 0 0%;
+      flex-direction: column;
+      margin-right: $spacer;
+      margin-bottom: 0; // Override the default
+      margin-left: $spacer;
+    }
+  }
+}

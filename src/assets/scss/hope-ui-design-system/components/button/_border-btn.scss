@@ -1,0 +1,15 @@
+.btn-border {
+    display: flex;
+    align-items: center;
+    border: $border-width * 2 solid $border-color;
+    transition: all 400ms ease;
+    border-radius: $border-radius;
+    cursor: pointer;
+    padding: $spacer*.5 $spacer;
+    &:hover {
+        border-color: darken($border-color, 20%);
+    }
+    &.active {
+        border-color: $primary;
+    }
+}

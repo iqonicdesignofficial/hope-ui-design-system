@@ -1,0 +1,42 @@
+.btn-fixed-end {
+    position: fixed;
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-fixed-start {
+    position: fixed;
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn-fixed-top {
+    position: fixed;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-fixed-bottom {
+    position: fixed;
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn-download {
+    position: fixed;
+    z-index: $zindex-general;
+    right: 0;
+    bottom: 0;
+    margin: $spacer * 1.25;
+    .btn {
+        background: $danger;
+        color: $white;
+        box-shadow: 0 0 30px rgba($danger, .35);
+        transition: all 400ms ease;
+        &:hover {
+            transition: all 400ms ease;
+            background: shade-color($danger, 10%);
+            box-shadow: 0 0 40px rgba($danger, .5);
+        }
+    }
+}

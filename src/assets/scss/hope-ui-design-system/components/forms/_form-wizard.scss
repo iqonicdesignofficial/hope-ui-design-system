@@ -1,0 +1,63 @@
+#top-tab-list {
+    margin-bottom: 60px;
+    li {
+        a {
+            color: $primary;
+            background: rgba($primary,0.2);
+            display: block;
+            padding: 0.938rem;
+            text-decoration: none;
+            font-size: 1.125rem;
+            border-radius: $border-radius;
+            
+            .iq-icon {
+                display: inline-block;
+                text-align: center;
+                height: 3.125rem;
+                width: 3.125rem;
+                line-height: 3.125rem;
+                font-size: 1.25rem;
+                border-radius: $border-radius-pill;
+                background: $primary;
+                color: $white;
+            }
+        }
+        &.active {
+            a {
+                background: $primary;
+                color: $white;  
+
+                .iq-icon {
+                    background: $white;
+                    color: $primary; 
+                }
+            }
+            &.done {
+                a {
+                    background: $success;
+                    i {
+                        color: $success; 
+                    }
+                }
+            }
+        }
+        &#confirm {
+            &.active {
+                a {
+                    background: $success;
+    
+                    i {
+                        color: $success; 
+                    }
+                }
+            }
+        }
+    }
+}
+#form-wizard1 {
+	fieldset {
+		&:not(:first-of-type) {
+			display: none;
+		}
+	}
+}

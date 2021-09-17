@@ -1,0 +1,35 @@
+.gradient-bottom{
+    height: 400px;
+    background: radial-gradient(20% 60% at 50% 50%, #3B8AFF 0%, #0048b3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+
+    .c {
+        border-radius: 50%;
+        padding: 9rem;
+       background: radial-gradient(60% 60% at 50% 50%, transparent 67%, #00000078 100%);
+        .xs-circle{
+            padding: 250px;
+        }
+    }
+
+    .xl-circle {
+        transform:translate(223px, -342px);
+       
+    }
+    .lg-circle {
+        transform: translate(84px, 26px);
+    }
+    .md-circle {
+        transform:translate(114px, 16px);
+    }
+    .sm-circle {
+        transform: translate(62px, 14px);
+    }
+    .xs-circle {
+        transform:translate(41px, 15px);
+    }
+}

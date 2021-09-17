@@ -1,0 +1,40 @@
+.sidebar+.main-content {
+    .iq-navbar-header {
+        color: $white;
+        .iq-container {
+            padding: calc(var(--bs-gutter-x, .75rem) * 3);
+            h1,h2,h3,h4,h5,h6, a, p {
+                color: inherit;
+            }
+        }
+        .iq-header-img {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            height: 264px;
+            width: 100%;
+            transition: all 400ms;
+            transform-origin: center left;
+        }
+    }
+}
+.sidebar.sidebar-mini+.main-content {
+    .iq-header-img {
+        transition: all 400ms;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .iq-navbar-header{
+        .iq-header-img{
+            height: 310px !important;
+        }
+    }
+    .conatiner-fluid{
+        &.content-inner{
+            &.mt-n5{
+                margin-top: unset !important;
+            }
+        }
+    }
+}

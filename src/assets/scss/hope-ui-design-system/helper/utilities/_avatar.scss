@@ -1,0 +1,55 @@
+.avatar {
+    position: relative;
+}
+@each $size,$value in $avatar-size {
+    .avatar-#{$value}{@include avatar($value, $border-radius-sm)}
+}
+.avatar-status {
+    i {
+        font-size: 12px;
+    }
+    position: absolute;
+    bottom: -4px;
+    top: auto;
+    left: auto;
+    right: 4px;
+}
+.avatar-borderd{
+    border: $border-width solid;
+    border-color: rgba($primary, 0.2);
+}
+@each $size, $value in $border-widths {
+    .avatar-borderd-#{$size}{
+        border: $value solid;
+        border-color: rgba($primary, 0.2);
+    }
+}
+.avatar-rounded {
+    border-radius: $border-radius-pill;
+    overflow: hidden;
+}
+.iq-media-group{
+    .iq-media {
+        margin-left: -12px;
+        position: relative;
+        z-index: 0;
+        transition: all .4s ease-in-out;
+        &:hover {
+            z-index: 9;
+            text-decoration: none;
+        }
+    }
+    .iq-icon-box-3 {
+        height: 2.5rem;
+        width: 2.5rem;
+        min-width: 2.5rem;
+        line-height: 2.5rem;
+        background: $white;
+        border: 2px solid $primary;
+        text-align: center;
+        font-size: 0.875rem;
+        text-decoration: none;
+        border-radius: $border-radius-pill;
+
+    } 
+} 

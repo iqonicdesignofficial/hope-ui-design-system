@@ -1,0 +1,12 @@
+
+.carousel-indicators {
+  [data-bs-target] {
+      border-radius: $carousel-indicator-radius;
+      transform: scale(.8);
+      transition: all 400ms ease;
+      &.active {
+          transition: all 400ms ease;
+          transform: scale(1);
+      }
+  }
+}

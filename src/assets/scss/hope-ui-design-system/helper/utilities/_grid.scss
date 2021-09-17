@@ -1,0 +1,19 @@
+.col-auto { grid-column: auto; }
+.col-span-full { grid-column: 1 / -1; }
+.col-start-auto { grid-column-start: auto; }
+.col-end-auto { grid-column-end: auto; }
+.grid-rows-none { grid-template-rows: none; }
+.gap{ gap: $grid-gutter-width; }
+.gap-half{ gap: $grid-gutter-width / 2; }
+.gap-card {gap: $card-spacer-x;}
+.gap-0 { gap: 0px; }
+.gap-1 { gap: 2px; }
+.gap-x-0 { column-gap: 0px; }
+.gap-y-0 { row-gap: 0px; }
+// Grid Column Loop
+@for $i from 1 through $grid-columns {
+  .grid-cols-#{$i} { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+  .col-span-#{$i} { grid-column:  span $i / span $i; }
+  .col-start-#{$i} { grid-column-start: $i; }
+  .col-end-#{$i} { grid-column-end: $i; }
+}

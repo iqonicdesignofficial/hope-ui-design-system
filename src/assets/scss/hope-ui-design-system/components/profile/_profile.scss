@@ -1,0 +1,125 @@
+.profile-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.profile-icon.iq-icon-box {
+	height: 3.625rem;
+	width: 3.625rem;
+	line-height: 3.625rem;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+.upload-icone{
+    position: absolute;
+    top: auto;
+    left: 69px;
+    bottom: -9px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 50%;
+    height: 2.188rem;
+    width: 2.188rem;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    border: 5px solid $white;
+    .file-upload{
+        display: none;
+    }
+}
+.card-profile {
+    margin-top: -120px;
+    font-size: 1rem;
+}
+.profile-info {
+    position: relative;
+    padding: 0 10px;
+    
+	&:before {
+		content: "";
+        border-right: 1px solid $border-color;
+        background: $border-color;
+		height: 3.125rem;
+		width: 1px;
+		position: absolute;
+		right: 0;
+		top: 30px;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+        &:before {
+            display: none;
+        }
+    }
+    .profile-icon {
+        &.icon {
+            line-height: 36px;
+        }
+    }
+}
+.profile-media {
+    position: relative;
+    padding-bottom:1.5rem;
+    z-index: 9;
+    &:before {      
+        content: "";
+        border-right: 2px solid $border-color;
+        background: $border-color;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        left: 9px;
+        top: 0.5rem;  
+        z-index: -1;
+    }
+}
+.profile-dots {
+    height: 20px;
+    width: 20px;
+    border: 2px solid;
+    border-radius: $border-radius-sm;
+    background: $white;
+}
+.profile-dots-pills {
+    height: 20px;
+    width: 20px;
+    border: 2px solid;
+    border-radius: $border-radius-pill;
+    background: $white;
+}
+
+
+@media (max-width: 991px) {
+	.profile-info{
+		&:before {
+			display: none;
+		}
+	}
+}
+@media(max-width:575px) {
+    .card-profile {
+        margin-top: -70px;
+    }
+}
+@media(max-width:479px) {
+    .profile-overly {
+        h3{
+            font-size: 14px;
+        }
+    }
+}

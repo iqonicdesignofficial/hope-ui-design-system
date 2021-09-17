@@ -1,0 +1,18 @@
+@mixin top-nav-link {
+    .nav-item {
+        .nav-link {
+            color: $white;
+            &:hover, &:active {
+                color: $light;
+            }
+        }
+    }
+    .caption {
+        .caption-title {
+            color: $white;
+        }
+        .caption-sub-title {
+            color: $light;
+        }
+    }
+}

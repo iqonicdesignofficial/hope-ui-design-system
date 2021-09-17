@@ -1,0 +1,31 @@
+.sign-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	&.sign-bg-right {
+		left: auto;
+		right: 0;
+	}
+}
+.gradient-main {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.login-bottom {
+    margin-top: -12.5rem;
+}
+@include media-breakpoint-up(xxl) {
+	.auth-card {
+		padding: 0 6.25rem;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.login-header {
+		height: 12.5rem !important;
+	}
+	.login-bottom {
+		margin-top: -6.25rem;
+	}
+}

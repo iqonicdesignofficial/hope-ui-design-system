@@ -1,0 +1,19 @@
+.nav-slider{
+    position: relative;
+    .nav-link{
+        &.active {
+        background-color: inherit;
+        }
+    }
+    .nav-item {
+        z-index: 3;
+    }
+    .nav-slider-thumb {
+        z-index: 1 !important;
+        .nav-link {
+        width: 100%;
+        color: $component-active-bg;
+        background: $component-active-bg;
+        }
+    }
+}

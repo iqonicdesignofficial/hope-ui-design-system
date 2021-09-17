@@ -1,0 +1,61 @@
+@keyframes dropdownAnimation {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+.dropdown-toggle {
+    &::after {
+        transition: all 400ms ease;
+    }
+    &.show {
+        transition: all 400ms ease;
+        &::after {
+            transform: rotate(180deg)
+        }
+    }
+}
+
+.dropdown {
+    .dropdown-menu {
+        animation-duration: 400ms;
+        animation-fill-mode: both;
+        backface-visibility: visible !important;
+        animation-name: dropdownAnimation;
+    }
+}
+.navbar-nav {
+	.dropdown-menu {
+		position: absolute;
+	}
+}
+
+@media all and (min-width: 992px) {
+	.navbar .hover-nav {
+        .dropdown-menu-end{ right:0; left: auto;  }
+        .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+        .nav-item{
+            .nav-link{
+                .icon{
+                    transition: all 400ms ease;
+                }
+            }
+            &:hover {
+                .nav-link{
+                    color: rgb(7, 6, 6);
+                    .icon{
+                        transition: transform 400ms ease;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+        .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+        .dropdown-menu.fade-up{ top:180%;  }
+        .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+    }
+}

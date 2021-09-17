@@ -1,0 +1,18 @@
+$navbar-vertical-dark-bg: $dark !default;
+$navbar-vertical-color-bg: $primary !default;
+
+$navbar-vertical-width: 16.2rem !default;
+$navbar-vertical-mini-width: 4.8rem !default;
+
+$navbar-vertical-active-shadow: 0 10px 20px -10px rgba(darken($primary, 25%), .4);
+$navbar-vertical-hover-shadow: null;
+
+$navbar-vertical-shadow-enable: true;
+$navbar-horizontal-shadow-enable: true;
+
+$navbar-vertical-shadow: 0 0px 30px 0 rgba(darken($primary, 25%), .05);
+$navbar-horizontal-shadow: 0 0px 30px 0 rgba(darken($primary, 25%), .05);
+
+$navbar-vertical-transition: all 400ms ease;
+
+$navbar-small-item: .625rem .75rem;

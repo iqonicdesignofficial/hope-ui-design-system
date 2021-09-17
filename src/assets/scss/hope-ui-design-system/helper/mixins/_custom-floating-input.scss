@@ -1,0 +1,18 @@
+@mixin floating-input-varient($normal-state, $active-state, $padding-y, $padding-x, $height: null) {
+    > .form-control,
+    > .form-select {
+        height: $height;
+    }
+    > label {
+            height: unset;
+            transform: $normal-state;
+            padding:$padding-y $padding-x;
+        }
+        > .form-control:focus,
+        > .form-control:not(:placeholder-shown),
+        > .form-select {
+        ~ label {
+            transform: $active-state;
+        }
+    }
+}

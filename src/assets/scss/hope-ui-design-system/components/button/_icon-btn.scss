@@ -1,0 +1,58 @@
+.btn {
+    .btn-inner{
+        i:not(.fas):not(.fab) {
+            position: relative;
+            top: 2px;
+        }
+        svg{
+            position: relative;
+            top: -2px;
+            width: 24px;
+        }
+    }
+}
+
+.btn-icon {
+    padding: $btn-icon-padding-y $btn-icon-padding-x;
+    &.btn-sm {
+        padding: $btn-icon-padding-y-sm $btn-icon-padding-x-sm;
+    }
+    &.btn-lg {
+        padding: $btn-icon-padding-y-lg $btn-icon-padding-x-lg;
+    }
+}
+
+.btn-setting {
+    padding: $spacer * .5;
+    z-index: $zindex-general + 100;
+    top: 50%;
+}
+.btn-sm {
+    .btn-inner{
+        svg{
+            width: 20px;
+        }
+    }
+}
+.btn-xs {
+    .btn-inner{
+        svg{
+            width: 16px;
+        }
+    }
+}
+
+.btn-lg {
+    .btn-inner{
+        svg{
+            width: 32px;
+        }
+    }
+    &.btn-icon {
+        .btn-inner {
+            svg {
+                top: 0;
+            }
+        }
+    }
+}

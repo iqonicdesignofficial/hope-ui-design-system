@@ -1,0 +1,17 @@
+$custom-floating-input-sm: scale(1.125) translateY(.25rem) translateX(.5rem) !default;
+$custom-floating-input-active-sm: scale(0.85) translateY(-1rem) translateX(.75rem) !default;
+$custom-floating-input-padding-x-sm: .5rem;
+$custom-floating-input-padding-y-sm: 0.1rem;
+$custom-floating-input-height-sm: calc(2.7rem + 2px);
+
+$custom-floating-input: scale(1.125) translateY(.5rem) translateX(.5rem) !default;
+$custom-floating-input-active: scale(0.85) translateY(-1rem) translateX(.75rem) !default;
+$custom-floating-input-padding-x: .5rem;
+$custom-floating-input-padding-y: .25rem;
+$custom-floating-input-height: null;
+
+$custom-floating-input-lg: scale(1.125) translateY(1rem) translateX(.5rem) !default;
+$custom-floating-input-active-lg: scale(0.85) translateY(-1rem) translateX(.75rem) !default;
+$custom-floating-input-padding-x-lg: .5rem;
+$custom-floating-input-padding-y-lg: 0.1rem;
+$custom-floating-input-height-lg: calc(4.2rem + 2px);

@@ -1,0 +1,47 @@
+
+// Vanila DatePicker
+
+$grey-dark: lighten($black, 25%) !default;
+$grey-light: darken($light, 25%) !default;
+$grey-lighter: darken($light, 10%) !default;
+
+$dp-background-color: $white !default;
+$dp-border-color: $border-color !default;
+
+$dp-border-radius:            $border-radius-lg !default;
+$dp-border-radius-small:      $border-radius-lg !default;
+
+$dp-line-height-base: 1.5 !default;
+$dp-font-size-normal: 1rem !default;
+$dp-font-size-small: 0.75rem !default;
+$dp-font-weight-semibold: 600 !default;
+$dp-font-weight-bold: 700 !default;
+
+$dp-dropdown-offset: 4px !default;
+$dp-dropdown-shadow: $box-shadow-sm !default;
+$dp-dropdown-z: 20 !default;
+
+$dp-title-background-color: $light !default;
+
+$dp-cell-size-base: 2.5rem !default;
+$dp-cell-focus-background-color: darken($light, 5%) !default;
+$dp-cell-prevnext-color: hsl(0, 0%, 48%) !default; // grey
+$dp-cell-disabled-color: $grey-lighter !default;
+$dp-cell-selected-background-color: $primary !default;
+$dp-cell-selected-color: #fff !default; // link(blue)-invert
+$dp-cell-selected-font-weight: 600 !default;
+$dp-cell-today-background-color: hsl(171, 100%, 41%) !default;  // turquoise (primary)
+$dp-cell-today-color: #fff !default;  // turquoise-invert
+$dp-cell-highlighted-background-color: $light !default;
+
+$dp-range-start-end-background-color: $grey-light !default;
+$dp-range-start-end-color: $dp-cell-selected-color !default;
+$dp-range-background-color: $grey-lighter !default;
+$dp-range-today-background-color: $dp-cell-today-background-color !default;
+
+$dp-week-color: $grey-light !default;
+
+$dp-footer-background-color: $light !default;
+
+$dp-input-in-edit-border-color: darken($primary, 5%) !default;
+$dp-input-in-edit-focus-box-shadow-size: 0 0 0.25em 0.25em !default;

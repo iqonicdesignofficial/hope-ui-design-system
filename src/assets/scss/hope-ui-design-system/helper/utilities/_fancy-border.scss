@@ -1,0 +1,12 @@
+.hr-horizontal {
+    background: transparent;
+    margin: $spacer/2 0;
+    background-image: linear-gradient(90deg,transparent,rgba($black,.4),transparent);
+}
+.hr-vertial {
+    width: 1px;
+    height: auto !important;
+    margin: 0 $spacer/2;
+    background: transparent;
+    background-image: linear-gradient(180deg,transparent,rgba($black,.4),transparent);
+}

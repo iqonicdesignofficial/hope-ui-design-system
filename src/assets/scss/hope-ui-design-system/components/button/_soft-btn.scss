@@ -1,0 +1,11 @@
+// Soft Button
+@each $color, $value in $theme-colors {
+    .btn-soft-#{$color} {
+      $color: shade-color($value, 10%);
+      @if (contrast-ratio(rgba($value, .2), $value) < $min-contrast-ratio){
+        $color: shade-color($value, 60%);
+      }
+      @include button-variant(rgba($value, .2), rgba($value, .0), $color, rgba($value, .4), rgba($value, .0), shade-color($value, 25%),rgba($value, .6), rgba($value, 0), shade-color($value, 10%));
+      box-shadow: unset;
+    }
+  }

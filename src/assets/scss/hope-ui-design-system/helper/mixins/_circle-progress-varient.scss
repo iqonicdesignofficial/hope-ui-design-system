@@ -1,0 +1,14 @@
+@mixin circle-progress-varient ($parent, $color) {
+    #{$parent} {
+        svg {
+            .circle-progress-value {
+                stroke: $color;
+                stroke-linecap: round;
+            }
+            .circle-progress-text {
+                fill: $color;
+                font-size: 16px;
+            }
+        }
+    }
+}

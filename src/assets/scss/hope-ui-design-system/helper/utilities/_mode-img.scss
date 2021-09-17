@@ -1,0 +1,9 @@
+.mode {
+    display: none;
+    &.light-img {
+        display: block;
+    }
+    &.ltr-img {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+.form-check-input {
+    transition: all 300ms ease;
+    &:checked{
+        transition: all 300ms ease;
+        &[type="checkbox"] {
+            box-shadow: $component-active-shadow;
+        }
+        &[type="radio"] {
+            box-shadow: $component-active-shadow;
+        }
+    }
+}
+.form-switch {
+    .form-check-input {
+        padding: $form-switch-size; 
+        background-color: $gray-200;
+        border-color: $gray-200;
+        transition: all 300ms ease;
+        &:checked{
+            background-color: tint-color($primary, 70%);
+            border-color: tint-color($primary, 70%);
+            transition: all 300ms ease;
+        }
+    }
+}

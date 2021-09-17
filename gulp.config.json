@@ -1,0 +1,23 @@
+{
+    "appName": "Hope UI",
+    "output" : "dist",
+    "mini": "false",
+    "dark": "false",
+    "layout" : "layouts/dashboard/default",
+    "assets": {
+        "fonts": [
+            "./src/assets/fonts/**/*.*"
+        ],
+        "style": [
+            "./node_modules/nouislider/distribute/nouislider.css"
+        ],
+        "js": [
+            "./node_modules/jquery/dist/jquery.js",
+            "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "./node_modules/nouislider/distribute/nouislider.min.js",
+            "./node_modules/vanillajs-datepicker/dist/js/datepicker-full.js",
+            "./{directory}/assets/js/plugins/slider-tabs.js"
+        ]
+    }
+}

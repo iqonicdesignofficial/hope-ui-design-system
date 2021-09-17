@@ -1,0 +1,24 @@
+.noUi-target {
+    border-color: transparent;
+}
+.noUi-horizontal {
+    height: $noUi-track-height;
+    .noUi-handle {
+        cursor: pointer;
+        width: $noUi-track-btn-width;
+        height: $noUi-track-btn-height;
+        top: $noUi-track-btn-align-y;
+        right: $noUi-track-btn-align-x;
+        border: $noUi-trake-btn-border;
+        border-radius: $noUi-track-btn-radius;
+        &:after, &:before{
+            content: unset
+        }
+    }
+}
+
+@include noUi-varient('.slider', $primary);
+
+@each $color, $value in $noUi-varients {
+    @include noUi-varient('.slider-#{$color}',$value)
+}

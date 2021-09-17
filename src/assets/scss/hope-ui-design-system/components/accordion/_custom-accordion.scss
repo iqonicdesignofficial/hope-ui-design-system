@@ -1,0 +1,25 @@
+.custom-accordion {
+    .accordion-button {
+        border: 0;
+        border-radius: $border-radius;
+        background: inherit;
+        &:not(.collapsed) {
+            background: inherit;
+            box-shadow: none;
+        }
+        &:focus{
+            border: 0;
+            box-shadow:none;
+            background: inherit;
+        }
+    }
+    .accordion-item {
+        margin-bottom: $spacer * 2;
+        border: 0;
+        background: $card-bg;
+        border-radius: $border-radius;
+    }
+    .accordion-body {
+        padding-top: 0;
+    }
+}

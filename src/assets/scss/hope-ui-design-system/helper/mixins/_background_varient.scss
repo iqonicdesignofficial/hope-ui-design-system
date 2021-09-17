@@ -1,0 +1,27 @@
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    color: shift-color($color, 10%);
+    background-color: rgba($color,.2) !important;
+  }
+  a#{$parent},
+  button#{$parent} {
+    @include hover-focus() {
+      color: darken($color, 15%);
+      background-color: rgba($color,.3) !important;
+    }
+  }
+}
+
+@mixin bg-variant-dark($parent, $color) {
+  #{$parent} {
+    background-color: rgba(lighten(darken($color, 30%), 40%), .1)!important;
+  }
+  a#{$parent},
+  button#{$parent} {
+    @include hover-focus() {
+      cursor: pointer;
+      color: darken($color, 15%);
+      background-color: rgba(lighten(darken($color, 30%), 40%), .15) !important;
+    }
+  }
+}

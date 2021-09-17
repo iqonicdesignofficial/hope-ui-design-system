@@ -1,0 +1,33 @@
+.icon-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($spacer * 8, 1fr));
+    grid-gap: $spacer;
+    color: $dark;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    cursor: pointer;
+    position: relative;
+    height: 90px;
+    .overlay{
+        position: absolute;
+        display: grid;
+        place-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: $white;
+        z-index: 1;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+    }
+    &:hover {
+        .overlay{
+            opacity: 1;
+            transition: opacity 300ms ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@keyframes animScaleX {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.175);}
+    100% {transform: scale(1);}
+}
+@keyframes animScale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.175);}
+    100% {transform: scale(1);}
+}
+@keyframes animRotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.animated-scaleX {
+    animation: animScale 45s 1s ease-in-out infinite;
+}
+.animated-scale {
+    animation: animScale 45s 1s ease-in-out infinite;
+}
+.animated-rotate {
+    animation: animRotate 8s 0s ease-in-out infinite;
+}

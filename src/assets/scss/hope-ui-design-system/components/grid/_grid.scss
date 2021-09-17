@@ -1,0 +1,65 @@
+.iq-example-row {
+	.row {
+		>.col {
+			padding-top: .75rem;
+			color: $body-color;
+			padding-bottom: .75rem;
+			background-color: rgba(86, 61, 124, .15);
+			border: 1px solid rgba(86, 61, 124, .2);
+		} 
+		>[class^=col-] {
+			padding-top: .75rem;
+			color: $body-color;
+			padding-bottom: .75rem;
+			background-color: rgba(86, 61, 124, .15);
+			border: 1px solid rgba(86, 61, 124, .2);
+		}
+	}
+}
+.iq-example-row-flex-cols {
+	.row {
+		margin-bottom: 15px;
+		min-height: 10rem;
+		background-color: rgba(255, 0, 0, .1);
+	}
+}
+.gap-2 {
+    gap: 0.938rem;
+}
+.gap-3 {
+    gap: 1.25rem;
+}
+.d-grid { display: grid; }
+.col-auto { grid-column: auto; }
+.col-span-full { grid-column: 1 / -1; }
+.col-start-auto { grid-column-start: auto; }
+.col-end-auto { grid-column-end: auto; }
+.grid-rows-none { grid-template-rows: none; }
+.gap-0 { gap: 0px; }
+.gap-x-0 { column-gap: 0px; }
+.gap-y-0 { row-gap: 0px; }
+.grid-flow-col { grid-auto-flow: column; }
+.gap-x-3 { gap: 0px 30px; }
+.d-grid-template-1fr-15 { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))  }
+
+// Grid Column Loop
+@for $i from 1 through $grid-columns {
+  .grid-cols-#{$i} { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+  .grid-rows-#{$i} { grid-template-rows: repeat($i, minmax(0, 1fr)); }
+  .col-span-#{$i} { grid-column:  span $i / span $i; }
+  .col-start-#{$i} { grid-column-start: $i; }
+  .col-end-#{$i} { grid-column-end: $i; }
+  .row-span-#{$i} { grid-row:  span $i / span $i; }
+}
+@for $i from 1 through $grid-columns {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		@include media-breakpoint-up($breakpoint) {
+			$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+			.grid-cols-#{$infix}-#{$i} { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+			.grid-rows-#{$infix}-#{$i} { grid-template-rows: repeat($i, minmax(0, 1fr)); }
+			.grid-flow-col-#{$infix} { grid-auto-flow: column; }
+			.grid-cols-#{$infix}-#{$i} { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+  			.grid-rows-#{$infix}-#{$i} { grid-template-rows: repeat($i, minmax(0, 1fr)); }
+		}
+	}
+}

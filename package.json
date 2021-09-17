@@ -1,0 +1,56 @@
+{
+  "name": "hope-ui",
+  "version": "1.0.3",
+  "description": "Production ready FREE Open Source Dashboard UI Kit and Design System.",
+  "keywords": [
+    "Free",
+    "Clean",
+    "Eye Catchy",
+    "Open Source",
+    "UI Kit",
+    "Hope-Ui",
+    "Dashboard",
+    "Design System",
+    "Gulp",
+    "Scss",
+    "HTML5",
+    "CSS3",
+    "Javascript"
+  ],
+  "scripts": {
+    "watch": "gulp watch --dev=true --output=dist-temp",
+    "dev": "gulp build --mini=false",
+    "build": "gulp build"
+  },
+  "author": "Iqonic Design",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nop": "0.0.3",
+    "gulp-npm-dist": "^1.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^1.4.0",
+    "gulp-wait": "0.0.2",
+    "handlebars": "^4.7.6",
+    "handlebars-layouts": "^3.1.4",
+    "yargs": "^16.0.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.1",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "nouislider": "^14.7.0",
+    "smooth-scrollbar": "^8.6.2",
+    "vanillajs-datepicker": "^1.1.4"
+  }
+}
