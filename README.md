@@ -1,10 +1,17 @@
 <p align="center">
-  <a hre="https://hopeui.iqonic.design/" title="Hope UI">
+  <a hre="https://bit.ly/3kltmcB" title="Hope UI">
     <img src="https://assets.iqonic.design/hope-ui/github/logo.png" />
   </a>
 </p>
-
-<h2 align="center">Free Open Source Bootstrap 5 Design System.</h2>
+<p align="center">
+<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/" target="__blank"><img src="https://img.shields.io/github/stars/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/network" target="__blank"><img src="https://img.shields.io/github/forks/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/issues" target="__blank"><img src="https://img.shields.io/github/issues/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="#" target="__blank"><img src="https://img.shields.io/bower/v/editor.md.svg" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://twitter.com/iqonicdesign" target="__blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiqonicdesign" /></a>
+</p>
+<h3 align="center">Free Open Source Bootstrap 5 Design System.</h3>
 
 ------------
 
@@ -34,35 +41,52 @@ Built ideally for developers, designers, and startups, or Creators, Hope UI brin
 - Hope UI Packs 100+ Fully-Codes Elements and widgets backed with SCSS and Gulp to make the development easy and fast.
 
 
-## Features
+### Features
 
 - Support with bootstrap 5
 - Scss component based design
-- Fully Responsive
 - HBS(Handlebar) based html
+- Fully Responsive
+- Clean Code
+- Demo Pages
 
-## Table of Contents
+# Table of Contents
 
-- [Demo Link](https://templates.iqonic.design/hope-ui/design-system/dist/)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [Versions](#version)
-- [Public RoadMap](https://iqonic.design/hopeui-roadmap/)
-- [File Struture](#file-structure)
-- [Browser Support](#browser-support)
-- [Support Developer](#supportdeveloper)
-- [More from Iqonic Design](https://iqonic.design/)
-- [Reporting Issues](#reporting-issues)
-- [Special Thanks/Credits](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/sourceAndCredit.html)
-- [Change Log](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/change-log.html)
-- [Follow Us](#follow-us-ref)
-- [Reach Us](https://iqonic.design/contact-us/)
-- [License](#licensing)
+  - [Quick Start](#quick-start)
+    - [Method 1: Direct Download](#method-1-direct-download)
+    - [Method 2: Using CDN](#method-2-using-cdn)
+    - [Method 3: Using NPM](#method-3-using-npm)
+  - [Documentation](#documentation)
+  - [Version](#version)
+  - [Public RoadMap](#public-roadmap)
+  - [File Structure](#file-structure)
+  - [Browser Support](#browser-support)
+  - [Don't Buy a Coffee for Us Instead Support Us](#dont-buy-a-coffee-for-us-instead-support-us)
+  - [More from Iqonic Design](#more-from-iqonic-design)
+  - [Reporting Issues](#reporting-issues)
+  - [Special Thanks](#special-thanks)
+  - [Change Log](#change-log)
+  - [Follow Us](#follow-us)
+  - [Licensing](#licensing)
 
 ## Quick Start
 
-For direct use cd dist and copy css, js, images & vendor folder.
+You can use following method to get started with CSS and JS files of the design system.
 
+### Method 1: Direct Download
+[Dowload from Github](https://github.com/tafcoder/sleek-dashboard/archive/refs/heads/master.zip)
+
+[Download from Iqonic Design](https://bit.ly/2VOQyq8)
+### Method 2: Using CDN
+```
+<link href="https://cdn.jsdelivr.net/gh/iqonicdesignofficial/hope-ui-design-system@main/dist/assets/css/hope-ui.min.css" rel="stylesheet"/>
+```
+
+```
+<script src="https://cdn.jsdelivr.net/gh/iqonicdesignofficial/hope-ui-design-system@main/dist/assets/js/hope-ui.js"></script>
+```
+### Method 3: Using NPM
+Start working with the design system
 1. Install Dependency
 ```
 npm install
@@ -78,12 +102,17 @@ npm run build
 ```
 [More Details...](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/gulp.html)
 ## Documentation
-- You can find our releases documentation on https://templates.iqonic.design/hope-ui/documentation/html/dist/main/
+You can find our documentation [here](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/).
 
 ## Version
-- Vue (Coming Soon)
-- React (Coming Soon)
+- [Figma](https://www.figma.com/community/file/1009728454881721702)
+- [HTML Admin Dashboard](https://bit.ly/2VOQyq8)
+- [Vue JS Dashobard](https://bit.ly/2XvQL1O)
+- [React JS Dashobard](https://bit.ly/3nKS3l0)
+- [Laravel Dashobard](https://bit.ly/3hJW1GJ)
 
+## Public RoadMap
+Checkout our public roadmap of Hope UI and also submit features requests [here](https://iqonic.design/hopeui-roadmap/).
 ## File Structure
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 ```
@@ -147,15 +176,38 @@ github/hope-ui-design-system
 ![Safari](https://assets.iqonic.design/hope-ui/github/Safari.png)
 ![Microsoft](https://assets.iqonic.design/hope-ui/github/Microsoft%20edge.png)
 ![Operamini](https://assets.iqonic.design/hope-ui/github/Operamini.png)
+
+## Don't Buy a Coffee for Us Instead Support Us
+- Star our GitHub repo ⭐
+- [Tweet about it](https://twitter.com/intent/tweet?text=Checkout%20%23HopeUI%20%E2%80%93%20Amazing%20open-source%20Bootstrap%205%20Admin%20Dashboard%20%26%20Design%20system.%20%23BuildwithHopeUI&url=https%3A%2F%2Fbit.ly%2F3ANB7gT).
+- Submit bugs, or suggest new features and documentation updates 🔧
+- Follow [@iqonicdesign](https://twitter.com/iqonicdesign) on Twitter.
+- Follow Us on [Instagram](https://www.instagram.com/iqonicdesign/)
+- Subscribe to Iqonic newsletter at [iqonic.design](https://iqonic.design)
+
+## More from Iqonic Design
+- [Free Products Every Week](https://bit.ly/3Eughpf)
+- [Premium Themes, templates, dashbaords, Apps, and more](https://iqonic.design/shop/?iqonic=1&orderby=sales&paged=1&product_for=premium)
+- [Subscribe on Youtube](https://www.youtube.com/c/IqonicDesign)
+- [Reach US](https://iqonic.design/contact-us/)
 ## Reporting Issues
 Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-design-system/issues) support
 
-## Licensing
-- Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://iqonic.design/) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
+## Special Thanks
+- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://www.google.com/fonts)
+- [Jquery](https://jquery.com/)
+- [Apex Charts](https://apexcharts.com/)
+[Checkout complete list](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/sourceAndCredit.html)
 
+## Change Log
+[Click Here](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/change-log.html) to check our full change log.
 ## Follow Us
 - [Twitter](https://twitter.com/iqonicdesign)
 - [Facebook](https://www.facebook.com/iqonicdesign/)
 - [Dribbble](https://dribbble.com/IqonicDesign)
 - [Instagram](https://www.instagram.com/iqonicdesign/)
 - [Product Hunt](https://www.producthunt.com/posts/iqonic-design)
+## Licensing
+- Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://bit.ly/3Eughpf) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
+
