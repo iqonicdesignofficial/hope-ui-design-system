@@ -1,5 +1,5 @@
 <p align="center">
-  <a hre="https://bit.ly/3kltmcB" title="Hope UI">
+  <a href="https://hopeui.iqonic.design/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" target="__blank" title="Hope UI">
     <img src="https://assets.iqonic.design/hope-ui/github/logo.png" />
   </a>
 </p>
@@ -12,16 +12,24 @@
 <a href="https://twitter.com/iqonicdesign" target="__blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiqonicdesign" /></a>
 </p>
 <h3 align="center">Free Open Source Bootstrap 5 Design System.</h3>
+<p align="center">
+  <a href="https://templates.iqonic.design/hope-ui/html/dist" title="Hope UI">Live Demo</a>
+  <span>|</span>
+  <a href="https://www.figma.com/community/file/1009728454881721702" title="Hope UI">Figma UI Kit</a>
+  <span>|</span>
+  <a href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI">HTML Dashboard</a>
+  <span>|</span>
+  <a href="https://iqonic.design/product/admin-templates/hope-ui-open-source-vue-js-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI">Vue JS Dashboard</a>
+  <a href="https://iqonic.design/product/admin-templates/hope-ui-free-open-source-react-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI">React JS Dashboard</a>
+  <span>|</span>
+  <a href="https://iqonic.design/product/admin-templates/hope-ui-free-open-source-laravel-admin-panel/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI">Laravel Dashboard</a>
+</p>
 
 ------------
 
-<a href="https://templates.iqonic.design/hope-ui/html/dist" title="Hope UI Dashboard">
+<a href="https://templates.iqonic.design/hope-ui/html/dist" target="__blank" title="Hope UI Dashboard">
   <img src="https://assets.iqonic.design/hope-ui/github/rtl-mode-min.png" alt="Hope UI Dashboard" />
 </a>
-
-#### [Live Demo](https://templates.iqonic.design/hope-ui/html/dist/ "Live Demo")
-
-------------
 
 Hope UI – free open source Bootstrap Design System is a gorgeously built UI kit based on bootstrap 5. The best free Bootstrap 5 design system is fully responsive and user-friendly, allowing Hope UI users to work effortlessly.
 Being easily adaptable and flexible, Hope UI can be a go-to design system for the developer out there.
@@ -50,6 +58,10 @@ Built ideally for developers, designers, and startups, or Creators, Hope UI brin
 - Clean Code
 - Demo Pages
 
+<a href="https://www.youtube.com/watch?v=3OMj6nqDuAA" title="Hope UI" target="__blank">
+  <img src="https://assets.iqonic.design/hope-ui/github/hope-ui-youtube.png" alt="Hope UI Video" />
+</a>
+
 # Table of Contents
 
   - [Quick Start](#quick-start)
@@ -76,7 +88,7 @@ You can use following method to get started with CSS and JS files of the design 
 ### Method 1: Direct Download
 [Dowload from Github](https://github.com/tafcoder/sleek-dashboard/archive/refs/heads/master.zip)
 
-[Download from Iqonic Design](https://bit.ly/2VOQyq8)
+[Download from Iqonic Design](https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 ### Method 2: Using CDN
 ```
 <link href="https://cdn.jsdelivr.net/gh/iqonicdesignofficial/hope-ui-design-system@main/dist/assets/css/hope-ui.min.css" rel="stylesheet"/>
@@ -106,10 +118,10 @@ You can find our documentation [here](https://templates.iqonic.design/hope-ui/do
 
 ## Version
 - [Figma](https://www.figma.com/community/file/1009728454881721702)
-- [HTML Admin Dashboard](https://bit.ly/2VOQyq8)
-- [Vue JS Dashobard](https://bit.ly/2XvQL1O)
-- [React JS Dashobard](https://bit.ly/3nKS3l0)
-- [Laravel Dashobard](https://bit.ly/3hJW1GJ)
+- [HTML Admin Dashboard](https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
+- [Vue JS Dashobard](https://iqonic.design/product/admin-templates/hope-ui-open-source-vue-js-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
+- [React JS Dashobard](https://iqonic.design/product/admin-templates/hope-ui-free-open-source-react-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
+- [Laravel Dashobard](https://iqonic.design/product/admin-templates/hope-ui-free-open-source-laravel-admin-panel/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 
 ## Public RoadMap
 Checkout our public roadmap of Hope UI and also submit features requests [here](https://iqonic.design/hopeui-roadmap/).
@@ -186,7 +198,7 @@ github/hope-ui-design-system
 - Subscribe to Iqonic newsletter at [iqonic.design](https://iqonic.design)
 
 ## More from Iqonic Design
-- [Free Products Every Week](https://bit.ly/3Eughpf)
+- [Free Products Every Week](https://iqonic.design/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 - [Premium Themes, templates, dashbaords, Apps, and more](https://iqonic.design/shop/?iqonic=1&orderby=sales&paged=1&product_for=premium)
 - [Subscribe on Youtube](https://www.youtube.com/c/IqonicDesign)
 - [Reach US](https://iqonic.design/contact-us/)
@@ -209,5 +221,5 @@ Have a bug or a feature request? Raise a new issue at our [github](https://githu
 - [Instagram](https://www.instagram.com/iqonicdesign/)
 - [Product Hunt](https://www.producthunt.com/posts/iqonic-design)
 ## Licensing
-- Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://bit.ly/3Eughpf) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
+- Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://iqonic.design/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
 
