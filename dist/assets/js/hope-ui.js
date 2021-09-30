@@ -38,23 +38,26 @@ Index Of Script
 -----------------------------------------------------------------------*/
 
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
+if(typeof bootstrap !== typeof undefined) {
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+}
 
 /*---------------------------------------------------------------------
                 Tooltip
 -----------------------------------------------------------------------*/
+if(typeof bootstrap !== typeof undefined) {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-sidebar-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-sidebar-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+}
 
 
 
@@ -66,15 +69,17 @@ const progressBarInit = (elem) => {
   const currentValue = elem.getAttribute('aria-valuenow')
   elem.style.width = '0%'
   elem.style.transition = 'width 2s'
-  new Waypoint( {
-    element: elem,
-    handler: function() { 
-      setTimeout(() => {
-        elem.style.width = currentValue + '%'
-      }, 100);
-    },
-    offset: 'bottom-in-view',
-  })
+  if (typeof Waypoint !== typeof undefined) {
+    new Waypoint( {
+      element: elem,
+      handler: function() { 
+        setTimeout(() => {
+          elem.style.width = currentValue + '%'
+        }, 100);
+      },
+      offset: 'bottom-in-view',
+    })
+  }
 }
 
 const customProgressBar = document.querySelectorAll('[data-toggle="progress-bar"]')
@@ -89,27 +94,31 @@ Array.from(customProgressBar, (elem) => {
 const rangeSlider = document.querySelectorAll('.range-slider');
 
 Array.from(rangeSlider, (elem) => {
-  noUiSlider.create(elem, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    }
-  })
+  if(typeof noUiSlider !== typeof undefined) {
+    noUiSlider.create(elem, {
+      start: [20, 80],
+      connect: true,
+      range: {
+          'min': 0,
+          'max': 100
+      }
+    })
+  }
 })
 
 const slider = document.querySelectorAll('.slider');
 
 Array.from(slider, (elem) => {
-  noUiSlider.create(elem, {
-    start: 50,
-    connect: [true, false],
-    range: {
-        'min': 0,
-        'max': 100
-    }
-  })
+  if(typeof noUiSlider !== typeof undefined) {
+    noUiSlider.create(elem, {
+      start: 50,
+      connect: [true, false],
+      range: {
+          'min': 0,
+          'max': 100
+      }
+    })
+  }
 })
 
 
@@ -118,11 +127,15 @@ Array.from(slider, (elem) => {
 -----------------------------------------------------------------------*/
 const datepickers = document.querySelectorAll('.vanila-datepicker')
 Array.from(datepickers, (elem) => {
-  new Datepicker(elem)
+  if(typeof Datepicker !== typeof undefined) {
+    new Datepicker(elem)
+  }
 })
 const daterangePickers = document.querySelectorAll('.vanila-daterangepicker')
 Array.from(daterangePickers, (elem) => {
-  new DateRangePicker(elem)
+  if(typeof Datepicker !== typeof undefined) {
+    new DateRangePicker(elem)
+  }
 })
 
 /*---------------------------------------------------------------------
@@ -132,17 +145,19 @@ if (window.counterUp !== undefined) {
   const counterUp = window.counterUp["default"];
   const counterUp2 = document.querySelectorAll( '.counter' )
   Array.from(counterUp2, (el) => {
-    const waypoint = new Waypoint({
-      element: el,
-      handler: function () {
-        counterUp(el, {
-          duration: 1000,
-          delay: 10,
-        });
-        this.destroy();
-      },
-      offset: "bottom-in-view",
-    });
+    if (typeof Waypoint !== typeof undefined) {
+      const waypoint = new Waypoint({
+        element: el,
+        handler: function () {
+          counterUp(el, {
+            duration: 1000,
+            delay: 10,
+          });
+          this.destroy();
+        },
+        offset: "bottom-in-view",
+      });
+    }
   })
 }
 
@@ -151,18 +166,11 @@ if (window.counterUp !== undefined) {
 -----------------------------------------------------------------------*/
 
 Array.from(document.querySelectorAll('[data-toggle="slider-tab"]'), (elem) => {
-  new SliderTab(elem)
+  if (typeof SliderTab !== typeof undefined) {
+    new SliderTab(elem)
+    elem.classList.add('nav-slider')
+  }
 })
-
-// Smooth Scollbar
-let Scrollbar
-if (jQuery(".data-scrollbar").length) {
-  Scrollbar = window.Scrollbar
-  Scrollbar.init(document.querySelector('.data-scrollbar'), {
-    continuousScrolling: false,
-  })
-}
-
 
 
 /*---------------------------------------------------------------------
@@ -343,23 +351,3 @@ if (document.querySelector('#navbarSideCollapse'))  {
     document.querySelector('.offcanvas-collapse').classList.toggle('open')
   })
 }
-
-/*---------------------------------------------------------------------
-Form Validation
------------------------------------------------------------------------*/
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-}, false);

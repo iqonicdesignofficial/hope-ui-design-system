@@ -29,3 +29,5 @@ gulp.task('watch', gulp.series(
         gulp.watch('./src/**/*.hbs', gulp.series('html-hbs')).on('change', browserSync.reload);
     }
 ));
+
+module.exports = browserSync

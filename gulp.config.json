@@ -11,13 +11,16 @@
         "style": [
             "./node_modules/nouislider/distribute/nouislider.css"
         ],
-        "js": [
-            "./node_modules/jquery/dist/jquery.js",
-            "./node_modules/@popperjs/core/dist/umd/popper.min.js",
-            "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-            "./node_modules/nouislider/distribute/nouislider.min.js",
-            "./node_modules/vanillajs-datepicker/dist/js/datepicker-full.js",
-            "./{directory}/assets/js/plugins/slider-tabs.js"
-        ]
+        "js": {
+            "core": [
+                "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+                "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "external": [
+                "./node_modules/nouislider/distribute/nouislider.min.js",
+                "./node_modules/vanillajs-datepicker/dist/js/datepicker-full.js",
+                "./{directory}/assets/js/plugins/slider-tabs.js"
+            ]
+        }
     }
 }

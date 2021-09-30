@@ -32,8 +32,8 @@ const AUTOPREFIXER_BROWSERS = [
 ];
 function styleTaskDev(styles){
     let paths = []
-    styles.forEach((js) => {
-        paths.push(js.replace('{directory}', directory))
+    styles.forEach((css) => {
+        paths.push(css.replace('{directory}', directory))
     })
 
     return gulp
@@ -53,8 +53,8 @@ function styleTaskDev(styles){
 
 function styleTask(styles) {
     let paths = []
-    styles.forEach((js) => {
-        paths.push(js.replace('{directory}', directory))
+    styles.forEach((css) => {
+        paths.push(css.replace('{directory}', directory))
     })
     return gulp
       .src(paths)
@@ -68,7 +68,7 @@ function styleTask(styles) {
     
 }
 
-gulp.task('style:main', function () {
+gulp.task('style:main', function (bs) {
     let styles = ['./src/assets/scss/**/*.scss'];
     if (dev == 'true') {
         return styleTaskDev(styles)
@@ -81,8 +81,8 @@ gulp.task('style:main', function () {
 gulp.task('style:libs', function(){
     let styles = config.assets.style;
     let paths = []
-    styles.forEach((js) => {
-        paths.push(js.replace('{directory}', directory))
+    styles.forEach((css) => {
+        paths.push(css.replace('{directory}', directory))
     })
 
     return gulp

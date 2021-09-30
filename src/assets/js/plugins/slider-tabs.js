@@ -1,10 +1,3 @@
-(function (jQuery) {
-  // "use strict";
-// Tabs Slider navigation
-
-
-})(jQuery)
-
 class SliderTab {
   constructor(element = undefined, option = undefined) {
     if (element !== undefined) {

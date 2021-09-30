@@ -31,8 +31,21 @@ function jsTask(scripts, filename) {
 }
 
 gulp.task('js-mini:libs', function() {
-    const scripts = config.assets.js
-    return jsTask(scripts, 'libs.min.js')
+    const scripts = config.assets.js.core
+    if (scripts.length) {
+        return jsTask(scripts, 'libs.min.js')
+    } else {
+        return true
+    }
 })
 
-gulp.task('js', gulp.series('js-move','js-mini:libs'))
+gulp.task('js-mini:external-libs', function() {
+    const scripts = config.assets.js.external
+    if (scripts.length) {
+        return jsTask(scripts, 'external.min.js')
+    } else {
+        return true
+    }
+})
+
+gulp.task('js', gulp.series('js-move','js-mini:libs','js-mini:external-libs'))
