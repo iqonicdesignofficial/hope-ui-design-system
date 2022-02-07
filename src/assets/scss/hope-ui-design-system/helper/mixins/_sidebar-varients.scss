@@ -1,0 +1,30 @@
+@mixin sidebar-color-varients($bg-color, $transparent: false) {
+    @if $transparent == true {
+        background-color: transparent;
+    } @else {
+        background-color: $bg-color;
+        .navbar-brand {
+            .logo-light {opacity: 1; transform: scale(1); transition: all 400ms ease;}
+            .logo-dark {opacity: 0; transform: scale(0); transition: all 400ms ease;}
+            .logo-title {
+                color: tint-color($bg-color, 90%);
+            }
+        }
+        .sidebar-header {
+            border-bottom-color: tint-color($bg-color, 10%);
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    &.disabled {
+                        color: tint-color($bg-color, 80%);
+                    }
+                    &:not(.disabled) {
+                        color: tint-color($bg-color, 70%);
+                    }
+                }
+            }
+        }
+    }
+    @content;
+}

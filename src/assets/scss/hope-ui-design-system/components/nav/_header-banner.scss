@@ -1,0 +1,91 @@
+.iq-banner {
+    &.hide {
+        .iq-navbar-header {
+            display: none;
+        }
+    }
+    .iq-navbar-header {
+        color: $white;
+        .iq-container {
+            padding: calc(var(--bs-gutter-x, 1rem) * 2);
+            h1,h2,h3,h4,h5,h6, a, p {
+                color: inherit;
+            }
+        }
+        .iq-header-img {
+            height: 264px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            transition: all 400ms;
+            transform-origin: center left;
+            overflow: hidden;
+            border-radius: $border-radius-lg;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    &.navs-bg-color {
+        .iq-header-img {
+            background: var(--bs-primary);
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+.iq-banner:not(.hide)+.content-inner {
+    margin-top: -$spacer * 3 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+    .iq-navbar-header{
+        .iq-header-img{
+            height: 310px !important;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .iq-banner{
+        &.default, &.navs-bg-color{
+            .iq-navbar{
+                &.navs-transparent, &.nav-glass{
+                    .product-offcanvas{
+                        .breadcrumb-title{
+                            color: $white;
+                            h6{
+                                color: $white;
+                            }
+                        }
+                        .iq-nav-menu{
+                            >.nav-item{
+                                >.menu-arrow{
+                                    color: $white;
+                                }
+                                &.active{
+                                    >.menu-arrow{
+                                        color: var(--bs-primary);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.iq-banner{
+    &.navs-bg-color{
+        .iq-navbar-header{
+            .iq-header-img{
+                background-image: var(--bs-primary);
+            }
+        }
+    }
+}

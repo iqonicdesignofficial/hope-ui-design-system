@@ -84,6 +84,9 @@
     font-weight: 600;
     color: $body-color;
     border: 0;
+    .right-icon{
+      transition: transform .35s ease;
+    }
     &:hover, &:focus {
       background-color: rgba($primary, .1);
       color: $primary;
@@ -91,16 +94,11 @@
     &:focus {
       box-shadow: 0 0 0 0.063rem rgba($primary, .7);
     }
-    &::before {
-      width: 1.25em;
-      line-height: 0;
-      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-      transition: transform .35s ease;
-      transform-origin: .5em 50%;
-    }
   }
-  .btn[aria-expanded="true"]::before {
-    transform: rotate(90deg);
+  .btn[aria-expanded="true"]{
+    .right-icon{
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -121,7 +119,7 @@
 [id="dropdowns"] .bd-example .dropup,
 [id="dropdowns"] .bd-example .dropend,
 [id="dropdowns"] .bd-example .dropstart {
-  margin: 0 1rem 1rem 0;
+  margin-top: .5rem;
 }
 
 /* Layout */
@@ -299,6 +297,11 @@
 body.offcanvas-active{
 	overflow:hidden;
 }
+body.uikit{
+  .btn-download{
+    display: none;
+  }
+}
 
 .uisheet{
   &.screen-darken{
@@ -328,7 +331,7 @@ body.offcanvas-active{
 #back-to-top{
   display: inline !important;
   .top {
-    bottom: 4.563rem;
+    bottom: 1.563rem;
     right: 1.563rem;
     z-index: 999;
   }

@@ -13,3 +13,28 @@
         border-color: $primary;
     }
 }
+
+.btn {
+    &.btn-border {
+        @include button-outline-variant($secondary);
+        border: $border-width * 2 solid $border-color;
+        padding: $spacer*.5 $spacer;
+        border-color: $secondary;
+        &:hover {
+            background: transparent;
+            border-color: var(--bs-primary);
+            color: var(--bs-primary);
+        }
+        .btn-check:checked + &,
+        .btn-check:active + &,
+        &:active,
+        &.active{
+            background: var(--bs-primary);
+            color: var(--bs-white);
+            border-color: var(--bs-primary);
+            &.bg-transparent{
+                color: var(--bs-primary);
+            }
+        }
+    }
+}

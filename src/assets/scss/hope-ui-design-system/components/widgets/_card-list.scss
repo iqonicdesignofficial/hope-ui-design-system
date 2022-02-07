@@ -1,0 +1,21 @@
+.card-wiget-list {
+	.card-progress {
+		.circle-progress {
+            width: 3rem;
+            height: 3rem;
+
+            div {
+                position: absolute;
+                width: 3.125rem;
+                text-align: center;
+                height: 3.125rem;
+                display: flex;
+                place-content: center;
+                align-items: center;
+            }
+            .circle-progress-text {
+                display: none;
+            }
+		}
+	}
+}

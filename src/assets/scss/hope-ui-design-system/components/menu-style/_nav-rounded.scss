@@ -1,0 +1,115 @@
+// Sidebar Item Right Side Full Rounded (50rem)
+.navs-pill {
+    .sidebar-body {
+        padding-right: $spacer;
+    }
+    &:not(.sidebar-mini) {
+        @include sidebar-nav-item-varients(true) {
+            .sub-nav {
+                .nav-link {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+    @include sidebar-nav-item-varients(true) {
+        &[aria-expanded=true] {
+            &:after{
+                @if $enable-rounded == true {
+                    border-top-right-radius: #{$border-radius-pill};
+                    border-bottom-right-radius: #{$border-radius-pill};
+                }
+            }
+        }
+        @if $enable-rounded == true {
+            border-top-right-radius: $border-radius-pill;
+            border-bottom-right-radius: $border-radius-pill;
+        }
+    }
+}
+
+// Sidebar Item All Side Rounded (50rem)
+.navs-pill-all {
+    &.sidebar-mini {
+        .sidebar-body {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        @include sidebar-nav-item-varients(false, .625rem .75rem)
+    }
+    .sidebar-body {
+        padding-right: 1rem;
+    }
+    @include sidebar-nav-item-start-spaceing; //default spacing 1rem by default $spacer
+    @include sidebar-nav-item-varients(false) {
+        &[aria-expanded=true] {
+            &:after{
+                @if $enable-rounded == true {
+                    border-radius: #{$border-radius-pill};
+                }
+            }
+        }
+        @if $enable-rounded == true {
+            border-radius: $border-radius-pill;
+        }
+    }
+}
+
+// Sidebar Item Right Side Rounded (1rem)
+.navs-rounded {
+    .sidebar-body {
+        padding-right: 1rem;
+    }
+    &:not(.sidebar-mini) {
+        @include sidebar-nav-item-varients(true) {
+            .sub-nav {
+                .nav-link {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+    @include sidebar-nav-item-varients(true) {
+        &[aria-expanded=true] {
+            &:after{
+                @if $enable-rounded == true {
+                    border-top-right-radius: #{$border-radius};
+                    border-bottom-right-radius: #{$border-radius};
+                }
+            }
+        }
+        @if $enable-rounded == true {
+            border-top-right-radius: $border-radius-sm;
+            border-bottom-right-radius: $border-radius-sm;
+        }
+    }
+}
+
+
+
+// Sidebar Item All Side Rounded (1rem)
+.navs-rounded-all {
+    &.sidebar-mini {
+        .sidebar-body {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        @include sidebar-nav-item-varients(false, .625rem .75rem);
+    }
+    .sidebar-body {
+        padding-right: 1rem;
+    }
+    @include sidebar-nav-item-start-spaceing; //default spacing 1rem by default $spacer
+    @include sidebar-nav-item-varients(false) {
+        &[aria-expanded=true] {
+            &:after{
+                @if $enable-rounded == true {
+                    border-radius: #{$border-radius};
+                }
+            }
+        }
+        @if $enable-rounded == true {
+            border-radius: $border-radius-sm;
+        }
+    }
+}

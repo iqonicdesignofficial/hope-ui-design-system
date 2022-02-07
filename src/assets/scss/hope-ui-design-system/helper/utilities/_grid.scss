@@ -4,7 +4,7 @@
 .col-end-auto { grid-column-end: auto; }
 .grid-rows-none { grid-template-rows: none; }
 .gap{ gap: $grid-gutter-width; }
-.gap-half{ gap: $grid-gutter-width / 2; }
+.gap-half{ gap: calc(#{$grid-gutter-width} / 2); }
 .gap-card {gap: $card-spacer-x;}
 .gap-0 { gap: 0px; }
 .gap-1 { gap: 2px; }

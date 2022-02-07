@@ -1,0 +1,47 @@
+// Sidebar Background Colors
+.sidebar-dark {
+    @include sidebar-color-varients($navbar-vertical-dark-bg);
+    @include nav-item() {
+        &[aria-expanded=true] {
+            &:after{
+                border-color: $white
+            }
+        }
+        &.active,&[aria-expanded=true]{
+            @include sidebar-item-color-varients($white,$primary);
+        }
+        &:hover:not(.active):not([aria-expanded=true]) {
+            @include sidebar-nav-item-hover($white);
+        }
+    }
+}
+
+.sidebar-color {
+    @include sidebar-color-varients($navbar-vertical-color-bg);
+    @include nav-item() {
+        &[aria-expanded=true] {
+            &:after{
+                border-color: $white
+            }
+        }
+        &.active,&[aria-expanded=true]{
+            @include sidebar-item-color-varients($primary ,$white);
+        }
+        &:hover:not(.active):not([aria-expanded=true]) {
+            @include sidebar-nav-item-hover($white);
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .sidebar {
+        &.sidebar-transparent{
+            background: $white;
+        }
+    }
+}
+
+.sidebar-transparent {
+    @include sidebar-color-varients($gray-500, true);
+    box-shadow: none;
+}

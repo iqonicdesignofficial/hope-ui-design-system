@@ -28,15 +28,15 @@
     right: 0;
     bottom: 0;
     margin: $spacer * 1.25;
-    .btn {
-        background: $danger;
-        color: $white;
-        box-shadow: 0 0 30px rgba($danger, .35);
-        transition: all 400ms ease;
-        &:hover {
-            transition: all 400ms ease;
-            background: shade-color($danger, 10%);
-            box-shadow: 0 0 40px rgba($danger, .5);
-        }
-    }
+    // .btn {
+    //     background: $danger;
+    //     color: $white;
+    //     box-shadow: 0 0 30px rgba($danger, .35);
+    //     transition: all 400ms ease;
+    //     &:hover {
+    //         transition: all 400ms ease;
+    //         background: shade-color($danger, 10%);
+    //         box-shadow: 0 0 40px rgba($danger, .5);
+    //     }
+    // }
 }

@@ -1,0 +1,84 @@
+
+.credit-card-widget{
+    .primary-gradient-card{
+        background:linear-gradient(117.76deg, rgba(255, 255, 255, 0.5) -7.21%, rgba(255, 255, 255, 0.01) 118.08%);
+        color: $white;
+        backdrop-filter: blur(10px);
+        h5,h6{
+            color: $white;
+        }
+        p {
+            font-size: 12px;
+        }
+        .card-number {
+            span {
+                font-weight: $font-weight-bold;
+            }
+        }
+        .master-card-content{
+            .master-card-1{
+               opacity: 0.3;
+            }
+            .master-card-2{
+                margin-left: -2rem;
+                opacity: 0.7;
+            }
+            
+        }
+    }
+    .card-header {
+        position: relative;
+        z-index: 9;
+        overflow: hidden;
+
+        &::before,&:after {
+            content: "";
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+        }
+        // #1743a4 6%, #2974e5
+        &::before {
+            background: linear-gradient(225deg, var(--bs-primary) 6%, var(--bs-primary) 56%);
+            top: -45px;
+            left: -3.125rem;
+            box-shadow: 0px 10px 50px 10px rgba(153, 159, 172, 0.2);
+        }
+        // #449ca3 6%, #4bc7d2
+        &::after {
+            background: linear-gradient(145deg, var(--bs-info) 6%, var(--bs-info) 56%);
+            bottom: -45px;
+            right: -3.125rem;
+            box-shadow: -10px 0px 50px 10px rgba(75, 199, 210, 0.2);
+        }
+    }
+}
+@include media-breakpoint-between(xl, xxl) {
+    .credit-card-widget{
+        .card-header {
+            &::before, &:after {
+                height: 255px;
+                width: 255px;
+            }
+        } 
+    }
+}
+@include media-breakpoint-down(xl) {
+    .credit-card-widget{
+        .primary-gradient-card{
+            .master-card-content{
+                .master-card-2{
+                    margin-left: -5rem;
+                }                
+            }
+        }
+        .card-number {
+            .fs-5 {
+                font-size: 1rem !important;
+            }
+        }
+    }
+}
+

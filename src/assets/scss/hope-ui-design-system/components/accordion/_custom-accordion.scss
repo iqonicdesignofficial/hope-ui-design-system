@@ -19,7 +19,11 @@
         background: $card-bg;
         border-radius: $border-radius;
     }
-    .accordion-body {
-        padding-top: 0;
+}
+.accordion{
+    .accordion-item{
+        .accordion-header{
+            border-radius: 0.6rem;
+        }
     }
 }

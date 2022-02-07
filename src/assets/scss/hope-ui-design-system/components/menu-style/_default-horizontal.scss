@@ -1,0 +1,87 @@
+body.offcanvas-active{
+	overflow:hidden;
+}
+.horizontal-nav{
+	background: inherit;
+	.offcanvas-header{ display:none; pointer-events:none;}
+}
+
+.screen-darken{
+	height: 100%; width:0%;
+	z-index: 30;
+	position: fixed; top: 0; right: 0; 
+	opacity:0; visibility:hidden;
+	background-color: rgba($dark, 0.6);
+	transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:10; 
+	transition:opacity .3s ease, width 0s;
+	opacity:1;
+	width:100%;
+	visibility:visible;
+}
+
+/* ============ mobile view ============ */
+@include media-breakpoint-down(xl) {
+	.iq-navbar {
+		.navbar-brand {
+			margin-left: 2rem;
+		}
+	}
+	.horizontal-nav{
+		.offcanvas-header{ opacity: 1;display: flex; justify-content: space-between; align-items: center;pointer-events:auto; }
+	}
+	
+	.horizontal-nav{
+		&.mobile-offcanvas{
+			background: $white;
+			visibility: hidden;
+			transform:translateX(-100%);
+			border-radius:0; 
+			display:block;
+			position: fixed;  top: 0; left:0;
+			height: 100%; width:80%;
+			z-index: 1200; 
+			overflow-y: scroll;
+			overflow-x: hidden;
+			transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+		}
+	
+		&.mobile-offcanvas.show{
+			visibility: visible; 	transform: translateX(0);
+		}
+		&.mobile-offcanvas .container, &.mobile-offcanvas .container-fluid{
+			display: block;
+		}
+	}
+	.iq-navbar {
+		.mobile-offcanvas{
+			&:not(.horizontal-nav) {
+				.navbar-brand {
+					align-items: center;
+					flex: 1;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(lg) {
+	.iq-navbar {
+		.navbar-collapse{
+			&:not(.offcanvas-collapse) {
+				.navbar-nav{
+					flex-direction: row;
+					float: right;
+					align-items: center;
+					li {
+                        padding:.5rem 1.5rem .0rem 0rem !important
+                    }
+				}
+			}	
+		}
+	
+	}
+}

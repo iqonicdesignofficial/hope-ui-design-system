@@ -12,7 +12,7 @@
         z-index: 1 !important;
         .nav-link {
         width: 100%;
-        color: $component-active-bg;
+        color: var(--bs-primary) !important;
         background: $component-active-bg;
         }
     }

@@ -1,0 +1,13 @@
+@include media-breakpoint-down(md) {
+	.fc-toolbar{
+		flex-wrap: wrap;
+        .fc-left{
+            margin-bottom: 1rem;
+        }
+		.fc-right{
+			.fc-button-group{
+				margin-top: 1rem;
+			}
+		}
+	}
+}

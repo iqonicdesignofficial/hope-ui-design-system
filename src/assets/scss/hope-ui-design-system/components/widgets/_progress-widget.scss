@@ -1,0 +1,30 @@
+.progress-widget{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .progress-detail{
+        margin-left: 1.5rem;
+    }
+}
+
+// Card Profile Progress
+.card-profile-progress {
+    margin-top: 1.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .circle-progress {
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+    .card-img {
+        width: 6.25rem;
+        height: 6.25rem;
+        position: absolute;
+        top: 1.5rem;
+        object-fit: cover;
+    }
+}

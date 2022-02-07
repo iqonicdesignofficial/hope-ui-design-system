@@ -42,7 +42,10 @@
 @import "./nav/slider-tab";
 @import "./nav/navbar";
 @import "./nav/header";
+@import "./nav/header-banner";
 
+// Menu Style
+@import "./menu-style/index";
 
 // Footers
 @import "./footer/footer-mini";
@@ -58,16 +61,25 @@
 // Loader
 @import "./loader/loader";
 
+@import "./widgets/index";
 @import "./main-content";
 
 //Progressbar
 @import "./progressbar/progressbar";
 
 
+
+//map
+@import "./map/vactor-map";
+
+//calander
+@import "./calender/calender";
+
 //profile
 @import "./profile/profile";
 
-
+//chart
+@import "./chart/chart";
 
 //swiper icone
 @import "./swiper-icon/swiper";

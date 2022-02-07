@@ -1,0 +1,28 @@
+.boxed-fancy {
+    &::before {
+        content: '';
+        width: 100%;
+        height: 200px;
+        background: $primary;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .boxed-inner {
+        margin: $spacer * 2;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+        border-radius: $border-radius-lg;
+        background: $body-bg;
+    }
+}
+.boxed {
+    background: $primary;
+    .boxed-inner {
+        margin: $spacer * 2;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+        border-radius: $border-radius-lg;
+        background: $body-bg;
+    }
+}

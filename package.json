@@ -1,6 +1,6 @@
 {
   "name": "hope-ui",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Production ready FREE Open Source Dashboard UI Kit and Design System.",
   "keywords": [
     "Free",
@@ -34,22 +34,23 @@
     "gulp-concat": "^2.6.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-nop": "0.0.3",
     "gulp-npm-dist": "^1.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^1.4.0",
     "gulp-wait": "0.0.2",
     "handlebars": "^4.7.6",
     "handlebars-layouts": "^3.1.4",
+    "sass": "^1.49.0",
+    "vanillajs-datepicker": "^1.2.0",
     "yargs": "^16.0.3"
   },
   "dependencies": {
     "@popperjs/core": "^2.9.1",
     "bootstrap": "^5.1.0",
     "nouislider": "^14.7.0",
-    "smooth-scrollbar": "^8.6.2",
+    "smooth-scrollbar": "^8.7.4",
     "vanillajs-datepicker": "^1.1.4"
   }
 }

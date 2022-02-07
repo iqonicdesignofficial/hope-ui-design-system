@@ -1,6 +1,6 @@
 module.exports = function (browserSync) {
   const gulp = require('gulp')
-  const sass = require('gulp-sass')
+  const sass = require('gulp-sass')(require('sass'));
   const concat = require('gulp-concat')
   const cleanCSS = require('gulp-clean-css')
   const autoprefixer = require('gulp-autoprefixer')
@@ -40,7 +40,7 @@ module.exports = function (browserSync) {
         .src(paths)
         .pipe(sourcemaps.init())
         .pipe(
-          sass({
+          sass.sync({
             includePaths: ["./node_modules"],
             outputStyle: "compressed",
           }).on("error", sass.logError)
@@ -89,7 +89,7 @@ module.exports = function (browserSync) {
       return gulp
         .src(paths)
         .pipe(
-          sass({
+          sass.sync({
             includePaths: ["./node_modules"],
             outputStyle: "compressed",
           }).on("error", sass.logError)

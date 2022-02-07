@@ -63,14 +63,14 @@
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
-    @if $enable-shadows == true {
-      box-shadow: $btn-box-color-shadow rgba($value, $btn-box-shadow-tint);
-    }
-    &:hover {
-      @if $enable-shadows == true {
-        box-shadow: $btn-box-color-shadow rgba($value, $btn-box-shadow-tint), $btn-box-color-shadow-hover rgba($value, $btn-box-shadow-shade);
-      }
-    }
+    // @if $enable-shadows == true {
+    //   box-shadow: $btn-box-color-shadow rgba($value, $btn-box-shadow-tint);
+    // }
+    // &:hover {
+    //   @if $enable-shadows == true {
+    //     box-shadow: $btn-box-color-shadow rgba($value, $btn-box-shadow-tint), $btn-box-color-shadow-hover rgba($value, $btn-box-shadow-shade);
+    //   }
+    // }
   }
 }
 

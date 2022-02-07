@@ -16,26 +16,26 @@
                 <h1 class="my-4">
                     <span>{{appName}} - Design System</span>
                 </h1>
-                <h4 class="text-white mb-5">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
+                <h4 class="mb-5 text-white">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
                 <div class="d-flex justify-content-center align-items-center">
                     <div>
-                        <a class="btn btn-light bg-white" target="_blank" href="https://templates.iqonic.design/hope-ui/html/dist/dashboard/">
-                        <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <a class="bg-white btn btn-light d-flex" target="_blank" href="{{path}}dashboard/">
+                        <svg width="22" height="22" class="me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                         Dashboard Demo</a>
                     </div>
                     <div class="ms-3">
-                        <a class="btn btn-light bg-white d-flex " href="https://github.com/iqonicdesignofficial/hope-ui-design-system"><img src="{{path}}assets/images/brands/github.png" width="24px" height="24px"><span class="text-danger mx-2 fw-bold">STAR US</span> <span>ON GITHUB</span></a>
+                        <a class="bg-white btn btn-light d-flex" target="_blank" href="https://github.com/iqonicdesignofficial/hope-ui-design-system"><img src="{{path}}assets/images/brands/github.png" width="24px" height="24px"><span class="mx-2 text-danger fw-bold">STAR US</span> <span>ON GITHUB</span></a>
                     </div>
                 </div>
 
             </div>
         </div>
         <div class="container">
-            <nav class="nav navbar navbar-expand-lg navbar-light top-1 rounded">
+            <nav class="rounded nav navbar navbar-expand-lg navbar-light top-1">
                 <div class="container-fluid">
-                    <a class="navbar-brand mx-2" href="#">
+                    <a class="mx-2 navbar-brand" href="#">
                         {{> partials/components/logo color="true" }}
                         <h5 class="logo-title">{{ appName }}</h5>
                     </a>
@@ -43,9 +43,12 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-2">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-start">
-                            <li class="nav-item me-3">
+                        <ul class="mb-2 navbar-nav ms-auto mb-lg-0 d-flex align-items-start">
+                            <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/main/" target="_blank">Documentation</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/main/change-log.html" target="_blank">Change Log</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-success" aria-current="page" href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/" target="_blank">
@@ -62,62 +65,83 @@
             </nav>
         </div>
     </div>
-    <div class=" body-class-1 container">
-        <aside class="mobile-offcanvas bd-aside card iq-document-card sticky-xl-top text-muted align-self-start mb-5" id="left-side-bar">
-            <div class="offcanvas-header p-0">  
+    <div class="container body-class-1">
+        <aside class="mb-5 mobile-offcanvas bd-aside card iq-document-card sticky-xl-top text-muted align-self-start" id="left-side-bar">
+            <div class="p-0 offcanvas-header">  
                 <button class="btn-close float-end"></button>
             </div>
-            <h2 class="h6 pb-2 border-bottom">On this page</h2>
+            <h2 class="pb-2 h6 border-bottom">On this page</h2>
             <nav class="small" id="elements-section">
-                <ul class="list-unstyled mb-0">
+                <ul class="mb-0 list-unstyled">
                     <li class="mt-2">
-                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
+                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">
+                            <i class="right-icon me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </i>
+                            Components
+                        </button>
                         <ul class="list-unstyled ps-3 collapse" id="components-collapse" style="">
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#accordion">Accordion</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#alerts">Alerts</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#badge">Badge</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#breadcrumb">Breadcrumb</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#buttons">Buttons</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#button-group">Button Group</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#calendar">Calendar</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#card">Card</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#carousel">Carousel</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#dropdowns">Dropdowns</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#list-group">List Group</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#modal">Modal</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#navs">Navs</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#navbar">Navbar</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#off-canvas">Off Canvas</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#pagination">Pagination</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#popovers">Popovers</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#progress">Progress</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#scrollspy">Scrollspy</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#spinners">Spinners</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#toasts">Toasts</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#tooltips">Tooltips</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#accordion">Accordion</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#alerts">Alerts</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#badge">Badge</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#breadcrumb">Breadcrumb</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#buttons">Buttons</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#button-group">Button Group</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#calendar">Calendar</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#card">Card</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#carousel">Carousel</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#dropdowns">Dropdowns</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#list-group">List Group</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#modal">Modal</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#navs">Navs</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#navbar">Navbar</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#off-canvas">Off Canvas</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#pagination">Pagination</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#popovers">Popovers</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#progress">Progress</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#scrollspy">Scrollspy</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#spinners">Spinners</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#toasts">Toasts</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#tooltips">Tooltips</a></li>
                         </ul>
                     </li>
                     <li class="my-2">
-                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
+                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">
+                            <i class="right-icon me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </i>
+                            Forms
+                        </button>
                         <ul class="list-unstyled ps-3 collapse" id="forms-collapse" style="">
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#overview">Overview</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#disabled-forms">Disabled Forms</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#sizing">Sizing</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#input-group">Input Group</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#a-form-control">Alertnate Input</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#floating-labels">Floating Labels</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#a-floating-labels">Alertnate Float Labels</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#toggle-btn">Toggle Button</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#validation">Validation</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#overview">Overview</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#disabled-forms">Disabled Forms</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#sizing">Sizing</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#input-group">Input Group</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#a-form-control">Alertnate Input</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#floating-labels">Floating Labels</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#a-floating-labels">Alertnate Float Labels</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#toggle-btn">Toggle Button</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#validation">Validation</a></li>
                         </ul>
                     </li>
                     <li class="mb-2">
-                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
+                        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+                            <i class="right-icon me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </i>
+                            Contents
+                        </button>
                         <ul class="list-unstyled ps-3 collapse" id="contents-collapse" style="">
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#typography">Typography</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#images">Images</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#tables">Tables</a></li>
-                            <li><a class="nav-link d-inline-flex align-items-center rounded" href="#figures">Figures</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#typography">Typography</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#images">Images</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#tables">Tables</a></li>
+                            <li><a class="rounded nav-link d-inline-flex align-items-center" href="#figures">Figures</a></li>
                         </ul>
                     </li>                    
                 </ul>
@@ -139,7 +163,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Accordion</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/accordion.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -154,7 +178,7 @@
 
                     <div class="card iq-document-card iq-doc-head">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-accordion-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +306,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Alerts</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/alert.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -297,7 +321,7 @@
 
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-alert-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -355,7 +379,7 @@
                                             </symbol>
                                         </svg>
                                         <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                            <svg class="flex-shrink-0 bi me-2" width="24" height="24">
                                                 <use xlink:href="#info-fill" />
                                             </svg>
                                             <div>
@@ -363,7 +387,7 @@
                                             </div>
                                         </div>
                                         <div class="alert alert-success d-flex align-items-center" role="alert">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                            <svg class="flex-shrink-0 bi me-2" width="24" height="24">
                                                 <use xlink:href="#check-circle-fill" />
                                             </svg>
                                             <div>
@@ -371,7 +395,7 @@
                                             </div>
                                         </div>
                                         <div class="alert alert-warning d-flex align-items-center" role="alert">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                            <svg class="flex-shrink-0 bi me-2" width="24" height="24">
                                                 <use xlink:href="#exclamation-triangle-fill" />
                                             </svg>
                                             <div>
@@ -379,7 +403,7 @@
                                             </div>
                                         </div>
                                         <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                            <svg class="flex-shrink-0 bi me-2" width="24" height="24">
                                                 <use xlink:href="#exclamation-triangle-fill" />
                                             </svg>
                                             <div>
@@ -388,15 +412,15 @@
                                         </div>
                                     </div>
                                     <div class="bd-example">
-                                        <div class="alert alert-left alert-success alert-dismissible fade show mb-3" role="alert">
+                                        <div class="mb-3 alert alert-left alert-success alert-dismissible fade show" role="alert">
                                             <span> This is a success alert—check it out!</span>
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
-                                        <div class="alert alert-top alert-info alert-dismissible fade show mb-3" role="alert">
+                                        <div class="mb-3 alert alert-top alert-info alert-dismissible fade show" role="alert">
                                             <span> This is a info alert—check it out!</span>
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
-                                        <div class="alert alert-right alert-warning alert-dismissible fade show mb-3" role="alert">
+                                        <div class="mb-3 alert alert-right alert-warning alert-dismissible fade show" role="alert">
                                             <span> This is a warning alert—check it out!</span>
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
@@ -417,7 +441,7 @@
                                         </div>
                                     </div>
                                     <div class="bd-example">
-                                        <div class="alert alert-success mb-0" role="alert">
+                                        <div class="mb-0 alert alert-success" role="alert">
                                             <h5 class="alert-heading">Well done!</h5>
                                             <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
                                             <hr>
@@ -529,7 +553,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Badge</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/badge.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -544,7 +568,7 @@
 
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-badge-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -633,7 +657,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Breadcrumb</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/breadcrumb.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -647,7 +671,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Breadcrumb-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -709,7 +733,7 @@
                                         </nav>
                                         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
                                             aria-label="breadcrumb">
-                                            <ol class="breadcrumb mb-0">
+                                            <ol class="mb-0 breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Library</li>
                                             </ol>
@@ -763,7 +787,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Button</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/buttons.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -777,7 +801,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Button-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -855,17 +879,18 @@
                                         <button type="button" class="btn btn-outline-dark">Dark</button>
                                     </div>
                                     <div class="bd-example">
-                                        <button type="button" class="btn btn-primary btn-xs mr-2">Ex small</button>
+                                        <button type="button" class="mr-2 btn btn-primary btn-xs">Ex small</button>
                                         <button type="button" class="btn btn-primary btn-sm">Small button</button>
                                         <button type="button" class="btn btn-primary">Default button</button>
                                         <button type="button" class="btn btn-primary btn-lg">Large button</button>
                                     </div>
                                     <div class="bd-example">
-                                        <button type="button" class="btn btn-soft-info">Info</button>
                                         <button type="button" class="btn btn-soft-primary">Primary</button>
+                                        <button type="button" class="btn btn-soft-secondary">Secondary</button>
                                         <button type="button" class="btn btn-soft-success">Success</button>
                                         <button type="button" class="btn btn-soft-danger">Danger</button>
                                         <button type="button" class="btn btn-soft-warning">Warning</button>
+                                        <button type="button" class="btn btn-soft-info">Info</button>
                                         <button type="button" class="btn btn-soft-light">Light</button>
                                         <button type="button" class="btn btn-soft-dark">Dark</button>
                                     </div>
@@ -919,7 +944,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Button Group</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/buttongroup.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -934,7 +959,7 @@
 
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Buttongroup-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1045,7 +1070,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Calendar</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/plugins/vanila-datepicker.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1059,7 +1084,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Calendar-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1098,12 +1123,12 @@
                                     </div>
                                 </div>  
                                 <div class="bd-example">
-                                    <div class="form-group vanila-daterangepicker d-flex flex-row">
+                                    <div class="flex-row form-group vanila-daterangepicker d-flex">
                                         <input type="text" name="start" class="form-control" placeholder="From Date">
                                         <span class="flex-grow-0">
                                             <span class="btn">To</span>
                                         </span>
-                                        <input type="text" name="end" class="form-control" placeholder="From Date">
+                                        <input type="text" name="end" class="form-control" placeholder="To Date">
                                     </div>
                                 </div>
                                 <div class="bd-example">
@@ -1144,7 +1169,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Card</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/cards.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1158,7 +1183,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-card-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1192,9 +1217,9 @@
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-card-prv" role="tabpanel">
                                     <div class="bd-example">
-                                        <div class="row  row-cols-1 row-cols-md-2 g-4">
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
                                             <div class="col">
-                                                <div class="card mb-0">
+                                                <div class="mb-0 card">
                                                     <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="40%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
                                                     <div class="card-body">
                                                         <h5 class="card-title">Card title</h5>
@@ -1204,7 +1229,7 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div class="card mb-0">
+                                                <div class="mb-0 card">
                                                 <div class="card-header">
                                                     Featured
                                                 </div>
@@ -1219,7 +1244,7 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div class="card mb-0">
+                                                <div class="mb-0 card">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
                                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -1236,7 +1261,7 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div class="card mb-0">
+                                                <div class="mb-0 card">
                                                 <div class="row g-0">
                                                     <div class="col-md-4">
                                                     <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="30%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
@@ -1330,7 +1355,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Carousel</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/carousel.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1344,7 +1369,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Carousel-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1474,7 +1499,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Dropdown</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/dropdowns.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1488,7 +1513,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-dropdown-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1522,9 +1547,9 @@
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-dropdown-prv" role="tabpanel">
                                     <div class="bd-example">
-                                        <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
+                                        <div class="flex-wrap btn-group w-100 align-items-center">
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button class="btn btn-secondary btn-sm dropdown-toggle me-2" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Dropdown button
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
@@ -1537,7 +1562,7 @@
                                                 </ul>
                                             </div>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button class="btn btn-secondary dropdown-toggle me-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Dropdown button
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -1550,7 +1575,7 @@
                                                 </ul>
                                             </div>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButtonLG" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button class="btn btn-secondary btn-lg dropdown-toggle me-2" type="button" id="dropdownMenuButtonLG" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Dropdown button
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLG">
@@ -1565,134 +1590,136 @@
                                         </div>
                                     </div>
                                     <div class="bd-example">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                    </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div>
+                                        <!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group">
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                        </div><!-- /btn-group -->
                                     </div>
 
                                     <div class="bd-example">
-                                    <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
-                                    <div class="dropend">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropendMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropend button
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropendMenuButton">
-                                            <li><h6 class="dropdown-header">Dropdown header</h6></li>
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropup">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropup button
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
-                                            <li><h6 class="dropdown-header">Dropdown header</h6></li>
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropstart">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropstartMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropstart button
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropstartMenuButton">
-                                            <li><h6 class="dropdown-header">Dropdown header</h6></li>
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                    </div>
+                                        <div class="flex-wrap btn-group w-100 align-items-center">
+                                            <div class="dropend">
+                                                <button class="btn btn-secondary dropdown-toggle me-2" type="button" id="dropendMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropend button
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropendMenuButton">
+                                                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropup">
+                                                <button class="btn btn-secondary dropdown-toggle me-2" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropup button
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
+                                                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropstart">
+                                                <button class="btn btn-secondary dropdown-toggle me-2" type="button" id="dropstartMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropstart button
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropstartMenuButton">
+                                                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-grp">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle me-2" type="button" id="dropdownRightMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    End-aligned menu
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightMenuButton">
+                                                        <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><hr class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="bd-example">
-                                    <div class="btn-group">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownRightMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        End-aligned menu
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightMenuButton">
-                                            <li><h6 class="dropdown-header">Dropdown header</h6></li>
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                    </div>
+                                    {{!-- <div class="bd-example">
+                                    
+                                    </div> --}}
                                 </div>
                                 <div class="tab-pane bd-heading-1 fade show" id="content-dropdown-code" role="tabpanel">
                                     <div class="section-block">
@@ -1878,7 +1905,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>List Group</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/listgroup.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1892,7 +1919,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-listgroup-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2216,7 +2243,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Modal</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/modal.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2230,7 +2257,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Modal-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2264,17 +2291,17 @@
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-Modal-prv" role="tabpanel">
                                     <div class="bd-example">
-                                        <div class="d-flex justify-content-between flex-wrap">
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
+                                        <div class="flex-wrap d-flex">
+                                            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
                                                 Launch demo modal
                                             </button>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
+                                            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
                                                 Launch static backdrop modal
                                             </button>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+                                            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
                                                 Vertically centered scrollable modal
                                             </button>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+                                            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
                                                 Full screen
                                             </button>
                                         </div>
@@ -2310,7 +2337,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Navs</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/navsandtabs.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2324,7 +2351,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Navs-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2368,7 +2395,7 @@
 
                                     <div class="bd-example">
                                         <nav>
-                                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                            <div class="mb-3 nav nav-tabs" id="nav-tab" role="tablist">
                                                 <button class="nav-link active d-flex align-items-center" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
                                                 <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
                                                 <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
@@ -2557,7 +2584,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Navbar</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/navbar.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2571,7 +2598,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Navbar-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2614,7 +2641,7 @@
                                                     <span class="navbar-toggler-icon"></span>
                                                 </button>
                                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                    <ul class="mb-2 navbar-nav me-auto mb-lg-0">
                                                         <li class="nav-item">
                                                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                                                         </li>
@@ -2644,7 +2671,7 @@
                                             </div>
                                         </nav>
 
-                                        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-1 mt-5">
+                                        <nav class="mt-5 navbar navbar-expand-lg navbar-dark bg-primary rounded-1">
                                             <div class="container-fluid">
                                                 <a class="navbar-brand" href="#">Logo</a>
                                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -2653,7 +2680,7 @@
                                                     <span class="navbar-toggler-icon"></span>
                                                 </button>
                                                 <div class="collapse navbar-collapse" id="navbar-1">
-                                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                    <ul class="mb-2 navbar-nav ms-auto mb-lg-0">
                                                         <li class="nav-item">
                                                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                                                         </li>
@@ -2679,7 +2706,7 @@
                                             </div>
                                         </nav>
 
-                                        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded-1 mt-5">
+                                        <nav class="mt-5 navbar navbar-expand-lg navbar-dark bg-danger rounded-1">
                                             <div class="container-fluid">
                                                 <a class="navbar-brand" href="#">Logo</a>
                                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -2688,7 +2715,7 @@
                                                     <span class="navbar-toggler-icon"></span>
                                                 </button>
                                                 <div class="collapse navbar-collapse" id="navbar-22">
-                                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                    <ul class="mb-2 navbar-nav ms-auto mb-lg-0">
                                                         <li class="nav-item">
                                                             <a class="nav-link active" aria-current="page" href="#">
                                                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
@@ -2874,7 +2901,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Off Canvas</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/offcanvas.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2888,7 +2915,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Offcanvas-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2922,7 +2949,7 @@
                         <div class="tab-content">
                             <div class="tab-pane bd-heading-1 fade show active" id="content-Offcanvas-prv" role="tabpanel">
                                 <div class="bd-example">
-                                    <button class="btn btn-primary me-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                                         aria-controls="offcanvasTop">Toggle top offcanvas</button>
                                     
                                     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
@@ -2935,7 +2962,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-primary me-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                         aria-controls="offcanvasRight">Toggle right offcanvas</button>
                             
                                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -2948,7 +2975,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-primary me-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
                                         aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
                             
                                     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -2961,7 +2988,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-primary me-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
+                                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
                                         aria-controls="offcanvasLeft">Toggle left offcanvas</button>
                                     
                                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
@@ -2974,7 +3001,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-primary me-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScroll"
+                                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScroll"
                                         aria-controls="offcanvasScroll">Toggle Scroll offcanvas</button>
                                     
                                     <div class="offcanvas offcanvas-start" tabindex="-1" data-bs-scroll="true" id="offcanvasScroll" aria-labelledby="offcanvasScrollLabel">
@@ -3058,7 +3085,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Pagination</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/paginations.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3072,7 +3099,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Pagination-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3139,7 +3166,7 @@
 
                                     <div class="bd-example">
                                         <nav aria-label="Another pagination example">
-                                            <ul class="pagination pagination-lg flex-wrap">
+                                            <ul class="flex-wrap pagination pagination-lg">
                                                 <li class="page-item disabled">
                                                     <a class="page-link" href="#" tabindex="-1">Previous</a>
                                                 </li>
@@ -3216,7 +3243,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Popovers</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/popovers.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3230,7 +3257,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Popover-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3312,7 +3339,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Progress</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/progress.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3326,7 +3353,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-progress-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3360,16 +3387,16 @@
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-progress-prv" role="tabpanel">
                                     <div class="bd-example">
-                                        <div class="progress mb-3">
+                                        <div class="mb-3 progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
                                         </div>
-                                        <div class="progress mb-3">
+                                        <div class="mb-3 progress">
                                             <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                         </div>
-                                        <div class="progress mb-3">
+                                        <div class="mb-3 progress">
                                             <div class="progress-bar bg-info text-dark w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                                         </div>
-                                        <div class="progress mb-3">
+                                        <div class="mb-3 progress">
                                             <div class="progress-bar bg-warning text-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                                         </div>
                                         <div class="progress">
@@ -3387,7 +3414,7 @@
                                                 style="width: 40%; height:10px" aria-valuenow="25" aria-valuemin="0"
                                                 aria-valuemax="100"></div>
                                         </div>
-                                        <div class="wrapper-progress mt-4">
+                                        <div class="mt-4 wrapper-progress">
                                             <div class="percentage-progress d-flex justify-content-end">
                                                 <div><span>40%</span></div>
                                             </div>
@@ -3397,7 +3424,7 @@
                                                 style="width: 40%; height:10px" aria-valuenow="25" aria-valuemin="0"
                                                 aria-valuemax="100"></div>
                                         </div>
-                                        <div class="wrapper-progress mt-4">
+                                        <div class="mt-4 wrapper-progress">
                                             <div class="percentage-progress d-flex justify-content-end">
                                                 <div><span>40%</span></div>
                                             </div>
@@ -3484,7 +3511,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Scrollspy</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/scrollspy.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3498,7 +3525,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Scrollspy-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3532,7 +3559,7 @@
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-Scrollspy-prv" role="tabpanel">
                                     <div class="bd-example">
-                                        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                                        <nav id="navbar-example2" class="px-3 navbar navbar-light bg-light">
                                             <a class="navbar-brand" href="#">Navbar</a>
                                             <ul class="nav nav-pills">
                                                 <li class="nav-item">
@@ -3613,7 +3640,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Spinners</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/spinners.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3627,7 +3654,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Spinners-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3814,7 +3841,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Toasts</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/toasts.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3828,7 +3855,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Toasts-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3861,10 +3888,10 @@
                         </div>
                             <div class="tab-content">
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-Toasts-prv" role="tabpanel">
-                                    <div class="bd-example bg-dark p-5 align-items-center">
+                                    <div class="p-5 bd-example bg-dark align-items-center">
                                         <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                             <div class="toast-header">
-                                                <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+                                                <svg class="rounded bd-placeholder-img me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
 
                                                 <strong class="me-auto">Bootstrap</strong>
                                                 <small class="text-muted">11 mins ago</small>
@@ -3875,22 +3902,22 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bd-example bg-dark p-5 align-items-center">
+                                    <div class="p-5 bd-example bg-dark align-items-center">
                                         <div class="toast fade show align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
                                             <div class="d-flex">
                                                 <div class="toast-body">
                                                     Hello, world! This is a toast message.
                                                 </div>
-                                                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                <button type="button" class="m-auto btn-close me-2" data-bs-dismiss="toast" aria-label="Close"></button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="bd-example bg-dark p-5 align-items-center">
+                                    <div class="p-5 bd-example bg-dark align-items-center">
                                         <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
                                             <div class="toast-body">
                                                 Hello, world! This is a toast message.
-                                                <div class="mt-2 pt-2 border-top">
+                                                <div class="pt-2 mt-2 border-top">
                                                 <button type="button" class="btn btn-primary">Take action</button>
                                                 <button type="button" class="btn btn-dark" data-bs-dismiss="toast">Close</button>
                                                 </div>
@@ -3945,7 +3972,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Tooltips</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/components/tooltips.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3959,7 +3986,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-Tooltips-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4033,8 +4060,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Overview</h5>
-                                <div class="d-flex align-items-center mt-2">
-                                    <a class="d-flex disabled btn p-0" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/main/" target="_blank">
+                                <div class="mt-2 d-flex align-items-center">
+                                    <a class="p-0 d-flex disabled btn" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/main/" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                             <path d="M10.5576 15.4709L14.0436 11.9999L10.5576 8.52895" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4047,7 +4074,7 @@
                     </div>
                     <div class="card iq-document-card iq-doc-head">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-form-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4178,7 +4205,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Disabled Forms</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/disable-forms.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4192,7 +4219,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-disabled-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4338,7 +4365,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Sizing</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/sizing.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4352,7 +4379,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-sizing-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4390,7 +4417,7 @@
                                         <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
                                     </div>
                                     <div class="mb-3">
-                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <select class="mb-3 form-select form-select-lg" aria-label=".form-select-lg example">
                                             <option selected="">Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -4465,7 +4492,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Input Group</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/input-group.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4479,7 +4506,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-inputgroup-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4513,20 +4540,20 @@
                         <div class="tab-content">
                             <div class="tab-pane bd-heading-1 fade show active" id="content-inputgroup-prv" role="tabpanel">
                                 <div class="bd-example">
-                                    <div class="input-group mb-3">
+                                    <div class="mb-3 input-group">
                                         <span class="input-group-text" id="basic-addon1">@</span>
                                         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
-                                    <div class="input-group mb-3">
+                                    <div class="mb-3 input-group">
                                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <span class="input-group-text" id="basic-addon2">@example.com</span>
                                     </div>
                                     <label for="basic-url" class="form-label">Your vanity URL</label>
-                                    <div class="input-group mb-3">
+                                    <div class="mb-3 input-group">
                                         <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                     </div>
-                                    <div class="input-group mb-3">
+                                    <div class="mb-3 input-group">
                                         <span class="input-group-text">$</span>
                                         <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                                         <span class="input-group-text">.00</span>
@@ -4570,11 +4597,11 @@
                     </div>
                 </article>
                 <article id="a-form-control">
-                    <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <div class="mt-5 mb-3 bd-heading sticky-xl-top align-self-start mt-xl-0 mb-xl-2">
                         <div class="card">
                             <div class="card-body">
                                 <h5>Alertnate Input</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/alternate-input.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4588,7 +4615,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-alternet-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4686,7 +4713,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Floating Labels</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/floating-lable.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4700,7 +4727,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-floating-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4735,19 +4762,19 @@
                             <div class="tab-pane bd-heading-1 fade show active" id="content-floating-prv" role="tabpanel">
                                 <div class="bd-example">
                                     <form>
-                                        <div class="form-floating mb-3">
+                                        <div class="mb-3 form-floating">
                                             <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com">
                                             <label for="floatingInput1">Email address</label>
                                         </div>
-                                        <div class="form-floating mb-3">
+                                        <div class="mb-3 form-floating">
                                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                                             <label for="floatingPassword">Password</label>
                                         </div>
-                                        <div class="form-floating form-group mb-3">
+                                        <div class="mb-3 form-floating form-group">
                                             <input type="email" class="form-control" disabled id="floatingInput2" placeholder="Place Holder">
                                             <label for="floatingInput2">Regular</label>
                                         </div>
-                                        <div class="form-floating form-group mb-3">
+                                        <div class="mb-3 form-floating form-group">
                                             <input type="email" class="form-control is-valid" id="floatingInput3"
                                                 placeholder="Place Holder">
                                             <label for="floatingInput3">Regular</label>
@@ -4796,11 +4823,11 @@
                     </div>
                 </article>
                 <article id="a-floating-labels">
-                    <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <div class="mt-5 mb-3 bd-heading sticky-xl-top align-self-start mt-xl-0 mb-xl-2">
                         <div class="card">
                             <div class="card-body">
                                 <h5>Alertnate Float Labels</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/alternate-float-lable.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4814,7 +4841,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-alternetfloat-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4848,27 +4875,27 @@
                         <div class="tab-content">
                             <div class="tab-pane bd-heading-1 fade show active" id="content-alternetfloat-prv" role="tabpanel">
                                 <div class="bd-example">
-                                    <div class="form-floating custom-form-floating custom-form-floating-sm form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating custom-form-floating-sm form-group">
                                         <input type="email" class="form-control" id="floatingInput11" placeholder="Place Holder">
                                         <label for="floatingInput11">Small</label>
                                     </div>
-                                    <div class="form-floating custom-form-floating form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating form-group">
                                         <input type="email" class="form-control" id="floatingInput12" placeholder="Place Holder">
                                         <label for="floatingInput12">Regular</label>
                                     </div>
-                                    <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating custom-form-floating-lg form-group">
                                         <input type="email" class="form-control" id="floatingInput13" placeholder="Place Holder">
                                         <label for="floatingInput13">Large</label>
                                     </div>
-                                    <div class="form-floating custom-form-floating form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating form-group">
                                         <input type="email" class="form-control" disabled id="floatingInput14" placeholder="Place Holder">
                                         <label for="floatingInput14">Regular</label>
                                     </div>
-                                    <div class="form-floating custom-form-floating form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating form-group">
                                         <input type="email" class="form-control is-valid" id="floatingInput15" placeholder="Place Holder">
                                         <label for="floatingInput15">Regular</label>
                                     </div>
-                                    <div class="form-floating custom-form-floating form-group mb-3">
+                                    <div class="mb-3 form-floating custom-form-floating form-group">
                                         <input type="email" class="form-control is-invalid" id="floatingInput16" placeholder="Place Holder">
                                         <label for="floatingInput16">Regular</label>
                                     </div>
@@ -4915,7 +4942,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Toggle Button</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/toggle-button.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -4929,7 +4956,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-toggle-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4965,59 +4992,59 @@
                                 <div class="bd-example">
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" class="form-check-input" id="customCheck5">
-                                        <label class="form-check-label pl-2" for="customCheck5">Checkbox</label>
+                                        <label class="pl-2 form-check-label" for="customCheck5">Checkbox</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" class="form-check-input" id="customCheck6" Checked="">
-                                        <label class="form-check-label pl-2" for="customCheck6">Checked</label>
+                                        <label class="pl-2 form-check-label" for="customCheck6">Checked</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" class="form-check-input" id="customCheck7" disabled="">
-                                        <label class="form-check-label pl-2" for="customCheck7">Disabled</label>
+                                        <label class="pl-2 form-check-label" for="customCheck7">Disabled</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" class="form-check-input" id="customCheck8" checked=""
                                             disabled="">
-                                        <label class="form-check-label pl-2" for="customCheck8">Disabled Checked</label>
+                                        <label class="pl-2 form-check-label" for="customCheck8">Disabled Checked</label>
                                     </div>
                                 </div>
                                 <div class="bd-example">
                                     <div class="form-check form-check-inline">
                                         <input type="radio" class="form-check-input" name="bsradio" id="radio1"
                                             checked="">
-                                        <label for="radio1" class="form-check-label pl-2">Active</label>
+                                        <label for="radio1" class="pl-2 form-check-label">Active</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="radio" class="form-check-input" name="bsradio" id="radio2">
-                                        <label for="radio2" class="form-check-label pl-2">Inactive</label>
+                                        <label for="radio2" class="pl-2 form-check-label">Inactive</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="radio" class="form-check-input" name="bsradio1" id="radio3"
                                             disabled="" checked="">
-                                        <label for="radio3" class="form-check-label pl-2">Active - Disabled</label>
+                                        <label for="radio3" class="pl-2 form-check-label">Active - Disabled</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="radio" class="form-check-input" name="bsradio1" id="radio4"
                                             disabled="">
-                                        <label for="radio3" class="form-check-label pl-2">Inactive - Disabled</label>
+                                        <label for="radio3" class="pl-2 form-check-label">Inactive - Disabled</label>
                                     </div>
                                 </div>
                                 <div class="bd-example">
                                     <div class="form-check form-switch form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="switch1" />
-                                        <label class="form-check-label pl-2" for="switch1">Off Switch</label>
+                                        <label class="pl-2 form-check-label" for="switch1">Off Switch</label>
                                     </div>
                                     <div class="form-check form-switch form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="switch2" checked />
-                                        <label class="form-check-label pl-2" for="switch2">On Switch</label>
+                                        <label class="pl-2 form-check-label" for="switch2">On Switch</label>
                                     </div>
                                     <div class="form-check form-switch form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="switch3" disabled />
-                                        <label class="form-check-label pl-2" for="switch3">Disabled Switch</label>
+                                        <label class="pl-2 form-check-label" for="switch3">Disabled Switch</label>
                                     </div>
                                     <div class="form-check form-switch form-check-inline">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="switch4" checked disabled />
-                                        <label class="form-check-label pl-2" for="switch4"> Switch</label>
+                                        <label class="pl-2 form-check-label" for="switch4"> Switch</label>
                                     </div>
                                 </div>
                                 <div class="bd-example">
@@ -5143,7 +5170,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Validation</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/forms/validation.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5157,7 +5184,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-validation-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5350,7 +5377,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Typography</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/contents/typography.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5364,7 +5391,7 @@
                     </div>
                     <div class="card iq-document-card iq-doc-head">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-typo-op" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5532,7 +5559,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Images</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/contents/images.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5546,7 +5573,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-image-prv" type="button" role="tab" aria-selected="true">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5605,7 +5632,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Tables</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/contents/tables.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5619,7 +5646,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-table-prv" type="button" role="tab" aria-selected="true">
                                             <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5971,7 +5998,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5>Figures</h5>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="mt-2 d-flex align-items-center">
                                     <a class="d-flex" href="https://templates.iqonic.design/hope-ui/documentation/html/dist/contents/figures.html" target="_blank">
                                         <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.2498C17.108 21.2498 21.25 17.1088 21.25 11.9998C21.25 6.89176 17.108 2.74976 12 2.74976C6.892 2.74976 2.75 6.89176 2.75 11.9998C2.75 17.1088 6.892 21.2498 12 21.2498Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5985,7 +6012,7 @@
                     </div>
                     <div class="card iq-document-card">
                         <div class="d-flex justify-content-end">
-                            <ul class="nav nav-tabs nav-tunnel" data-toggle="slider-tab" role="tablist">
+                            <ul class="nav nav-tabs nav-tunnel nav-slider" data-toggle="slider-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#content-figure-prv" type="button" role="tab" aria-selected="true">
                                             <svg width="20" class="me-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -6020,7 +6047,7 @@
                                 <div class="tab-pane bd-heading-1 fade show active" id="content-figure-prv" role="tabpanel">
                                     <div class="bd-example">
                                         <figure class="figure">
-                                        <svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="42%" y="50%" fill="#dee2e6" dy=".3em">400x300</text></svg>
+                                        <svg class="rounded bd-placeholder-img figure-img img-fluid" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="42%" y="50%" fill="#dee2e6" dy=".3em">400x300</text></svg>
 
                                         <figcaption class="figure-caption">A caption for the above image.</figcaption>
                                         </figure>
@@ -6115,8 +6142,8 @@
         </div>
     </div>
     {{!-- Back-To-Top --}}
-    <div id="back-to-top" style="display: none;">
-        <a class="btn btn-primary btn-xs p-0 position-fixed top" id="top" href="#top">
+    <div id ="back-to-top" style="display: none;">
+        <a class="p-0 btn btn-primary btn-xs position-fixed top" id="top" href="#top">
             <svg width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 15.5L12 8.5L19 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>

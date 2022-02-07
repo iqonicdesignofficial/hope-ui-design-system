@@ -1,0 +1,40 @@
+// Sidebar Panel
+.sidebar-hover {
+    &:hover {
+        max-width: $navbar-vertical-width;
+        .logo-title {
+            transition: $navbar-vertical-transition;
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        &.navs-rounded-all, &.navs-pill-all{
+            @include sidebar-nav-item-start-spaceing; //default spacing 1rem by default $spacer
+        }
+        .sidebar-list {
+            .static-item {
+                text-align: left;
+                .default-icon {display: block;}
+                .mini-icon {display: none;}
+            }
+            @include nav-item() {
+                span {
+                    opacity: 1;
+                    transform: translateX(0);
+                    transition: $navbar-vertical-transition;
+                }
+                .icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .sidebar.sidebar-mini.sidebar-hover {
+        &:hover {
+            &+.main-content{
+                margin-left: 0;
+                }
+            }
+        }
+    }   

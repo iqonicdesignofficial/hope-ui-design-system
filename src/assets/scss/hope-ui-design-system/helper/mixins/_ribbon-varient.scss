@@ -1,0 +1,17 @@
+@mixin ribbon-default($bg-color, $color, $border-width, $border-radius, $padding) {
+    background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    &:after {
+        content: '';
+        position: absolute;
+        border: $border-width solid;
+        @if $enable-rounded == true {
+            border-radius: $border-radius;
+        }
+        border-color: $bg-color;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        @content;
+    }
+}

@@ -1,0 +1,67 @@
+// Parameters should be boolean 
+// True parameters form navitem with :not(.disabled) selector
+@mixin nav-item($not-disabled-content: true) {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                @if $not-disabled-content == true {
+                    &:not(.disabled) {
+                        @content;
+                    }
+                } @else {
+                    @content;
+                }
+                
+            }
+        }
+    }
+}
+@mixin sidebar-nav-item-varients($padding-left: false,$item-padding: .625rem 1rem) {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                padding: $item-padding;
+                @if $padding-left == true {
+                    padding-left: 1.25rem;
+                }
+                &:not(.disabled) {
+                    @content;
+                }
+            }
+        }
+    }
+}
+
+@mixin sidebar-item-color-varients($color, $bg-color) {
+    @content;
+    background-color: $bg-color;
+    color: $color;
+    @if $enable-shadows == true {
+        box-shadow: $navbar-vertical-active-shadow;
+    }
+    &:hover {
+        @if $enable-shadows == true {
+            box-shadow: $navbar-vertical-hover-shadow;
+        }
+    }
+}
+
+
+@mixin sidebar-nav-item-hover($bg-color) {
+    background-color: rgba($bg-color,.1); 
+    color: $bg-color;
+    .collapsed+.sub-nav {
+        @content;   
+    }
+}
+
+@mixin sidebar-nav-item-start-spaceing($padding: $spacer) {
+    .navbar-nav{
+        .nav-item {
+            &:not(.static-item) {
+                padding-left:$spacer;
+                @content;
+            }
+        }
+    }
+}

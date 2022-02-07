@@ -7,6 +7,7 @@
                 padding: $table-th-padding-y $table-th-padding-x;
                 text-transform: uppercase;
                 letter-spacing: $table-th-letter-spacing;
+                border-bottom: 2px solid transparent !important;
             }
         }
     }

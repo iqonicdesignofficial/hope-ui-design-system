@@ -1,0 +1,12 @@
+.fc-unthemed .fc-toolbar .fc-button{
+    text-transform: capitalize;
+}
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td{
+    border-color: $border-color !important;
+}
+.fc-other-month.fc-past, .fc-other-month.fc-future {
+    background: tint-color($border-color, 60%);
+}
+.fc-unthemed td.fc-today{
+    background: rgba($primary, .04) !important;
+}

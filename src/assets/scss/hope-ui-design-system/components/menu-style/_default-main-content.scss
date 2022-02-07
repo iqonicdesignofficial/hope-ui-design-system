@@ -1,0 +1,23 @@
+.main-content{
+    .content-inner {
+        min-height: calc(100vh - 6.6rem);
+    }
+}
+.sidebar {
+    &+.main-content {
+        margin-left: $navbar-vertical-width;
+        transition: $navbar-vertical-transition;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .sidebar {
+        &+.main-content {
+            .nav {
+                .navbar-brand{
+                    display: none;
+                }
+            }
+        }
+    }
+}
